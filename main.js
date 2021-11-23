@@ -2,6 +2,7 @@
 // Airplane Crashes and Fatalities
 
 import { Test } from "./Test.js";
+import { Bubble } from "./Bubble.js";
 
 
 let test;
@@ -28,6 +29,7 @@ Promise.all([
   
 function init(){
   chart = new Test(state, setGlobalState);
+  bubble = new Bubble(state, setGlobalState);
   
   console.log("table", chart);
   draw();
