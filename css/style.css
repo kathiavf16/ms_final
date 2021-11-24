@@ -15,7 +15,7 @@ body {
   font-size: 1.6rem;
   font-family: "Open Sans", sans-serif;
   color: #ffffff;
-  background-color: #22283f;
+  background-color: #fffff3;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -51,12 +51,23 @@ Main Components
   height: 100vh;
 }
 .cd-section h2  {
-  line-height: 100vh;
+  
   text-align: center;
   font-size: 2.4rem;
+  background-color: rgb(236, 223, 164);
+  
+  
+  
 }
 .cd-section:first-of-type > div {
-  background-color: #2b334f;
+  opacity: 0.1;
+  background-image: url("../img/one.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  
+  
 }
 .cd-section:first-of-type > div::before {
   /* alert -> all scrolling effects are not visible on small devices */
@@ -70,6 +81,7 @@ Main Components
   font-size: 1.3rem;
   text-transform: uppercase;
   color: #6a7083;
+  
 }
 .cd-section:nth-of-type(2) > div {
   background-color: #2e5367;
@@ -105,8 +117,10 @@ Main Components
 }
 @media only screen and (min-width: 1050px) {
   .cd-section h2 {
-    font-size: 4rem;
+    font-size: 6rem;
     font-weight: 300;
+    
+    
   }
   [data-hijacking="on"] .cd-section {
     opacity: 0;
@@ -225,7 +239,37 @@ My Components
 -------------------------------- */
 
 #bar {
-    position: initial;
-    top: 0px;
-    left: 0px;
+  
+    width: 50%;
+    float: left;
+    height: 70%;
+}
+
+
+#bubble {
+  
+    width: 50%;
+    float: left;
+    height: 70%;
+}
+
+#text-left {
+
+  width:50%; 
+  margin-left: 50%;
+  height: 70%;
+
+}
+
+#text-right {
+
+  width:50%; 
+  margin-left: 50%;
+  height: 70%;
+
+}
+
+#first {
+
+  opacity: 0.7;
 }
