@@ -49,9 +49,13 @@ Main Components
 
 .cd-section {
   height: 100vh;
+  color: #2c240f;
 }
 .cd-section h2  {
   
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   font-size: 2.4rem;
   background-color: rgb(236, 223, 164);
@@ -60,11 +64,8 @@ Main Components
   
 }
 .cd-section:first-of-type > div {
-  opacity: 0.1;
-  background-image: url("../img/one.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  
+  
   height: 100vh;
   
   
@@ -83,17 +84,17 @@ Main Components
   color: #6a7083;
   
 }
-.cd-section:nth-of-type(2) > div {
-  background-color: #2e5367;
+.cd-section:nth-of-type(1) > div {
+  background-color: rgb(233, 225, 196);
 }
 .cd-section:nth-of-type(3) > div {
-  background-color: #267481;
+  background-color: rgb(233, 225, 196);
 }
-.cd-section:nth-of-type(4) > div {
+.cd-section:nth-of-type() > div {
   background-color: #fcb052;
 }
 .cd-section:nth-of-type(5) > div {
-  background-color: #f06a59;
+ background-color: rgb(233, 225, 196);
 }
 [data-animation="parallax"] .cd-section > div, [data-animation="fixed"] .cd-section > div, [data-animation="opacity"] .cd-section > div {
   background-position: center center;
@@ -249,15 +250,21 @@ My Components
 #bubble {
   
     width: 50%;
-    float: left;
+    float: right;
     height: 70%;
 }
 
+.viz{
+  padding: 5% 5%;
+}
 #text-left {
 
   width:50%; 
   margin-left: 50%;
   height: 70%;
+  font-size: 1.2em;
+  line-height: 1.8;
+  padding: 5% 5%;
 
 }
 
@@ -266,10 +273,27 @@ My Components
   width:50%; 
   margin-left: 50%;
   height: 70%;
+  font-size: 1.2em;
+  line-height: 1.8;
+  padding: 5% 5%;
 
 }
 
-#first {
-
-  opacity: 0.7;
+header h1, footer h1{
+  font-size: 2.75em;
+  opacity: 0.8;
+ 
 }
+
+.head1 {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/one.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+    
+}
+
