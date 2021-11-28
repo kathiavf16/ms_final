@@ -23,68 +23,82 @@
 
 	<header class='head1'>
 		
-		<h1> Air Pollution, Climate Change and Your Health <br> <a class="scroll-arrow">Interactive Narrative <br>↓<br><span class="lowlight">scroll</span></a></h1> <br>
+		<h1> Air Pollution, Climate Change and Our Health<br> <a class="scroll-arrow">Interactive Narrative <br>↓<br><span class="lowlight">scroll</span></a></h1> <br>
 	</header>
 	<section class="cd-section">
 		<div class="text" id="text-left"><br><br>
-			<h1>Air Quality and Climate Change Research</h1>
+			<h1>Air pollution and Climate Change</h1>
 			<br>
-			<p>Climate change can impact air quality and, conversely, air quality can impact climate change. <br> <br>
-				Changes in climate can result in impacts to local air quality. Atmospheric warming associated with climate change
-				has the potential to increase ground-level ozone in many regions, which may present challenges for compliance with
-				the ozone standards in the future. The impact of climate change on other air pollutants, such as particulate matter,
-				is less certain, but research is underway to address these uncertainties.
+			<p>Nowadays we often hear about climate change and air pollution, but how are these two subjects related? Let’s first
+				mention C02 emissions, which come from the extraction and burning of fossil fuels, are the main driver of climate
+				change, and a major source of air pollutants. <br> <br> In addition, many air pollutants contribute to climate change by
+				affecting the amount of incoming sunlight that is reflected or absorbed by the atmosphere, with some pollutants
+				warming and others cooling the Earth.
 			</p>
 		</div>
-		<div class="viz" id="bar">
-			<h1>title goes here</h1><br>
-
+		<div class="viz" id="imge">
+			<h1></h1><br><br><br><br><br>
+			<img src="./img/co2.jpeg" alt="" style="height: 70%; width: 90%;">
+			<p style="font-style: italic; font-weight: bold;"> Carbon Monoxide (CO2) </p>
 		</div>
 	</section>
 
 	<section class="cd-section">
+		<div class=viz id='imge'>
+		 <h1></h1> <br><br><br><br><br><br> <br> <br> <br>
+			<img src="./img/poll2.jpeg" alt="" style="height: 50%; width: 90%;">
+			<p style="font-style: italic; font-weight: bold;">Environmental Pollution</p>
+
+		</div> 
 		<div class="text" id="text-right">
-
-			<h1>Air Quality and Climate Change Research</h1>
+			<br> <br> <br> 
+			<h1>What is Air Pollution?</h1> <br>
 			
-			<p>The cause of accidents was broken down
-				into five categories: Pilot Error, Mechanical, Weather, Sabotage, and Other.
-				Some examples of each category can be found in the table. Since most aviation accidents are caused
-				by multiple causes the primary
-				or initiating cause was chosen.
+			<p> Air pollution is the presence of substances in the atmosphere that are harmful to the health of humans and other
+				living beings, these substances also cause damage to the climate or to materials. Air pollution may cause diseases,
+				allergies, and even death to humans. <br> <br> It may also cause harm to other living organisms such as animals and food crops,
+				and may damage the natural environment (for example, climate change) or
+				built environment (for example, acid rain).
 			</p>
-
-			
 		</div>
-		<div class=viz id='bubble'>
-			<h1>Title goes here - Bubble</h1><br>
-
-		</div>
+		
+		
 	</section>
 
 	<section class="cd-section">
 		<div class="text" id="text-left">
-			<p>The cause of accidents was broken down
-				into five categories: Pilot Error, Mechanical, Weather, Sabotage, and Other.
-				Some examples of each category can be found in the table. Since most aviation accidents are caused
-				by multiple causes the primary
-				or initiating cause was chosen.
+			<h1>What is the Air Quality Index (AQI)</h1> <br> 
+			<p>The AQI is an index for reporting daily air quality. It tells how clean or polluted the air is, and what
+				associated health effects might be a concern, especially for ground-level ozone and particle pollution. <br> <br>
+				An AQI value of 100 generally corresponds to the national air quality standard for the pollutant, which is the level
+				EPA has set to protect public health. AQI values below 100 are generally thought of as satisfactory. When AQI values
+				are above 100, air quality is considered to be unhealthy-at first for certain sensitive groups of people, then for
+				everyone as AQI values get higher. <br> <br>
+
+				
 			</p>
 		</div>
-		<div class="viz" id='bubble'>
-			<h1>Title goes here - Bubble</h1><br>
-
+		<div class="viz" id='chart'>
+			<h1>The AQI is divided into six categories:</h1><br>
+			<br> <br> <br> <br> <br>
+			<p>Gauge Chart Goes Here</p>
 		</div>
 	</section>
 
 	<section class="cd-section">
-		<div class="text" id="text-right">
-			<p>The cause of accidents was broken down
-				into five categories: Pilot Error, Mechanical, Weather, Sabotage, and Other.
-				Some examples of each category can be found in the table. Since most aviation accidents are caused
-				by multiple causes the primary
-				or initiating cause was chosen.
+		<div class="text" id="text-right"> <br>
+			<h1>Types of Air Pollutants</h1>
+			<br>
+			<p>EPA sets national air quality standards for six common pollutants, also called criteria pollutants, to protect
+				public health. Monitoring sites report data to EPA for these six criteria air pollutants:
 			</p>
+			<br>
+				<li>Ozone (O3)</li>
+				<li>Particulate matter (PM10 and PM2.5)</li>
+				<li>Carbon monoxide (CO)</li>
+				<li>Nitrogen dioxide (NO2)</li>
+				<li>Sulfur dioxide (SO2)</li>
+				<li>Lead (Pb)</li>
 		</div>
 
 		<div class="viz" id="bar">
@@ -137,6 +151,42 @@
 <script src="js/main.js"></script> <!-- Resource jQuery -->
 <script src="../lib/d3.js"></script>
 <script src="../lib/d3-array.js"></script>
+<script data-require="d3@4.0.0" data-semver="4.0.0" src="https://d3js.org/d3.v4.min.js"></script>
 <script type="module" src="main.js"></script>
+
+<script>
+
+function onDocumentReady() {
+var powerGauge = gauge('#power-gauge', {
+size: 300,
+clipWidth: 300,
+clipHeight: 300,
+ringWidth: 60,
+maxValue: 10,
+transitionMs: 4000,
+});
+powerGauge.render();
+
+function updateReadings() {
+// just pump in random data here...
+powerGauge.update(Math.random() * 10);
+}
+
+// every few seconds update reading values
+updateReadings();
+setInterval(function () {
+updateReadings();
+}, 5 * 1000);
+}
+
+if (!window.isLoaded) {
+window.addEventListener("load", function () {
+onDocumentReady();
+}, false);
+} else {
+onDocumentReady();
+}
+
+</script>
 </body>
 </html>

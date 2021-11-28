@@ -3,15 +3,19 @@
 
 import { Test } from "./Test.js";
 import { Bubble } from "./Bubble.js";
-
+import {Gauge} from "./Gauge.js";
 
 let test;
+let bubble;
+let gauge;
 
 let state = {
 
   geojson: null,
   data: null,
   test: null,
+  bubble: null,
+  gauge: null,
   
 };
 
@@ -30,6 +34,7 @@ Promise.all([
 function init(){
   chart = new Test(state, setGlobalState);
   bubble = new Bubble(state, setGlobalState);
+  gauge = new Gauge(state, setGlobalState);
   
   console.log("table", chart);
   draw();
@@ -38,6 +43,8 @@ function init(){
 function draw() {
   console.log("test", test);
   chart.draw(state, setGlobalState);
+  bubble.draw(state, setGlobalState);
+  gauge.draw(state, setGlobalState);
     
 }
 
