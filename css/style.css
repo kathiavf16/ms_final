@@ -283,7 +283,6 @@ My Components
   border-width: medium;
   opacity: 0.9;
   align-content: center;
-  padding: 5% 5%;
  
   
 }
@@ -312,7 +311,7 @@ My Components
 
 .viz{
 
-  padding: 5% 5%;
+  padding: 1% 11%;
 }
 
 .text p {
