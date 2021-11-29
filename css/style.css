@@ -18,13 +18,14 @@ body {
   background-color: #fffff3;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
 }
+
 
 body::before {
   /* never visible - this is used in jQuery to check the current MQ */
   content: 'mobile';
   display: none;
+
 }
 @media only screen and (min-width: 1050px) {
   body::before {
@@ -34,8 +35,10 @@ body::before {
 }
 
 a {
-  color: #267481;
+  color: #814f26;
   text-decoration: none;
+  font-style: italic;
+  font-weight: bold;
 }
 
 /* -------------------------------- 
@@ -157,6 +160,7 @@ Main Components
   }
   [data-animation="scaleDown"] .cd-section > div, [data-animation="gallery"] .cd-section > div, [data-animation="catch"] .cd-section > div {
     box-shadow: 0 0 0 rgba(25, 30, 46, 0.4);
+    
   }
   [data-animation="opacity"] .cd-section.visible > div {
     z-index: 1;
@@ -279,6 +283,7 @@ My Components
   border-width: medium;
   opacity: 0.9;
   align-content: center;
+  padding: 5% 5%;
  
   
 }
