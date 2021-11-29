@@ -1,5 +1,3 @@
-
-
 //source: https://www.d3-graph-gallery.com/graph/circularpacking_drag.html - Draggable circular packing in d3.js
 
 
@@ -7,8 +5,8 @@ class Bubble {
 
     constructor(state, setGlobalState) {
       
-      this.width = 900;
-      this.height = 800;
+      this.width = 500;
+      this.height = 600;
 
       this.svg = d3.select("#bubble")
       .append("svg")
@@ -23,7 +21,7 @@ class Bubble {
       .attr('width', '100%')
       .attr('height', '100%')
       .append('image')
-      .attr('xlink:href', "images/ED.PNG")
+      .attr('xlink:href', "img/one.jpg")
       .attr("preserveAspectRadio", "none")
       .attr("xmlns:xlink", "http://www.w3.org/1999/xlink")
       .attr('width', 1)
@@ -33,7 +31,7 @@ class Bubble {
   
     draw(state, setGlobalState) {
 
-      const size = d3.scaleLinear().domain(d3.extent(state.topAirlines, d => d.fatalities)).range([40,200]);
+      const size = d3.scaleLinear().domain(d3.extent(state.bubble, d => d.sizes)).range([90,50]);
       const tooltip = d3.select("body").append("div").attr("class", "toolTip");
       
       const mousemove = function(d) {
@@ -41,15 +39,15 @@ class Bubble {
         .style("left", d3.event.pageX - 50 + "px")
         .style("top", d3.event.pageY - 70 + "px")
         .style("display", "inline-block")
-        .html((d.operator + " has been involved in " + d.incidents + 
-            " accidents" + " with " + d.fatalities + " fatalities"));}
+        .html((d.pullid + " has been involved in " + d.sizes + 
+            " accidents" + " with " + d.sizes + " fatalities"));}
   
 
       this.defs.selectAll(".logo-pattern")
-      .data(state.topAirlines)
+      .data(state.bubble)
       .enter().append("pattern")
       .attr("class", "logo-pattern")
-      .attr('id', function(d){return d.id})
+      .attr('id', function(d){return d.pullid})
       .attr('patternContentUnits', 'objectBoundingBox')
       .attr('width', '100%')
       .attr('height', '100%')
@@ -63,13 +61,13 @@ class Bubble {
       var node = this.svg.append("g")
       .attr("transform", "translate(0,0)")
       .selectAll("circle")
-      .data(state.topAirlines)
+      .data(state.bubble)
       .enter()
       .append("circle")
-      .attr("r", function(d){ return size(d.fatalities)})
+      .attr("r", function(d){ return size(d.sizes)})
       .attr("cx", this.width / 2)
       .attr("cy", this.height / 2)
-      .style("fill", function(d) { return "url(#" + d.id + ")"})
+      .style("fill", function(d) { return "url(#" + d.pullid + ")"})
       //.style("fill-opacity", 0.3)
       .attr("stroke", "lightyellow")
       .style("stroke-width", 4)
@@ -89,10 +87,10 @@ class Bubble {
       var simulation = d3.forceSimulation()
      .force("center", d3.forceCenter().x( this.width / 2).y(this.height / 2)) // Attraction to the center of the svg area
      .force("charge", d3.forceManyBody().strength(0.05)) // Nodes are attracted one each other of value is > 0
-     .force("collide", d3.forceCollide().strength(.2).radius(function(d){ return size(d.fatalities)}).iterations(1)); // Force that avoids circle overlapping
+     .force("collide", d3.forceCollide().strength(.2).radius(function(d){ return size(d.sizes)}).iterations(1)); // Force that avoids circle overlapping
 
      simulation
-     .nodes(state.topAirlines)
+     .nodes(state.bubble)
      .on("tick", function(d){
       node
           .attr("cx", function(d){ return d.x; })

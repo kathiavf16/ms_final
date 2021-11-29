@@ -3,11 +3,11 @@
 
 import { Test } from "./Test.js";
 import { Bubble } from "./Bubble.js";
-//import {Gauge} from "./Gauge.js";
+import {Gauge} from "./Gauge.js";
 
 let test;
 let bubble;
-//let gauge;
+let gauge;
 
 let state = {
 
@@ -21,7 +21,7 @@ let state = {
 
 Promise.all([
   d3.csv("../data/test.csv", d3.autoType),
-  d3.csv("../data/bubble20.csv", d3.autoType),
+  //d3.csv("../Data/causes.csv", d3.autoType),
  
 ]).then(([test, bubble]) => {
   state.test = test;
@@ -33,19 +33,19 @@ Promise.all([
 });
   
 function init(){
-  test = new Test(state, setGlobalState);
+  chart = new Test(state, setGlobalState);
   bubble = new Bubble(state, setGlobalState);
-  //gauge = new Gauge(state, setGlobalState);
+  gauge = new Gauge(state, setGlobalState);
   
-  console.log("table", test);
+  console.log("table", chart);
   draw();
 }
 
 function draw() {
-  console.log("test", test, bubble);
-  test.draw(state, setGlobalState);
+  console.log("test", test);
+  chart.draw(state, setGlobalState);
   bubble.draw(state, setGlobalState);
-  //gauge.draw(state, setGlobalState);
+  gauge.draw(state, setGlobalState);
     
 }
 
