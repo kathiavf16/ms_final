@@ -1,7 +1,7 @@
 pullid,pull,sizes,path
-Ozone (O3),Ozone (O3),600,img/one.jpg
-Particulate matter (PM10 and PM2.5),Particulate matter (PM10 and PM2.5),400,img/one.jpg
-Carbon monoxide (CO),Carbon monoxide (CO),300,img/one.jpg
-Nitrogen dioxide (NO2),Nitrogen dioxide (NO2),200,img/one.jpg
-Sulfur dioxide (SO2),Sulfur dioxide (SO2),100,img/one.jpg
-Lead (Pb),Lead (Pb),50,img/one.jpg
+1,Ozone (O3),600,img/o3.png
+2,Particulate matter (PM10 and PM2.5),400,img/pm.png
+3,Carbon monoxide (CO),300,img/co2.png
+4,Nitrogen dioxide (NO2),200,img/no2.png
+5,Sulfur dioxide (SO2),100,img/so2.jpeg
+6,Lead (Pb),50,img/pb.jpeg

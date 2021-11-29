@@ -286,6 +286,20 @@ My Components
     float: left;
     height: 70%;
 }
+.toolTip {
+    position: absolute;
+    display: none;
+    min-width: 40%;
+    height: auto;
+    background: none repeat scroll 0 0 rgb(63, 34, 20);
+    border: 10% solid lightyellow;
+    padding: 14px;
+    pointer-events: painted;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1em;
+    color: lightyellow;
+  }
 
 .viz{
 

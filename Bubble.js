@@ -39,7 +39,7 @@ class Bubble {
         .style("left", d3.event.pageX - 50 + "px")
         .style("top", d3.event.pageY - 70 + "px")
         .style("display", "inline-block")
-        .html((d.pullid + " has been involved in " + d.sizes + 
+        .html((d.pull + " has been involved in " + d.sizes + 
             " accidents" + " with " + d.sizes + " fatalities"));}
   
 
