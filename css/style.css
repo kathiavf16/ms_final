@@ -18,7 +18,7 @@ body {
   background-color: #fffff3;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  padding: 5%;
+
 }
 
 body::before {
@@ -248,7 +248,7 @@ My Components
 
 #bar {
   
-    width: 50%;
+    width: 60%;
     float: left;
     height: 70%;
     align-content: center;
@@ -257,7 +257,7 @@ My Components
 
 #gauge1 {
   
-    width: 50%;
+    width: 60%;
     float: left;
     height: 70%;
     align-content: center;
@@ -265,7 +265,7 @@ My Components
 }
 
 #imge {
-    width: 50%;
+    width: 60%;
     float: left;
     height: 70%;
     
@@ -278,11 +278,14 @@ My Components
   border: peru;
   border-width: medium;
   opacity: 0.9;
+  align-content: center;
+ 
+  
 }
 
 #bubble {
   
-    width: 50%;
+    width: 60%;
     float: left;
     height: 70%;
 }
@@ -314,8 +317,8 @@ My Components
 }
 #text-left {
 
-  width:50%; 
-  margin-left: 50%;
+  width:40%; 
+  margin-left: 60%;
   height: 70%;
   font-size: 1.2em;
   line-height: 1.6;
@@ -325,8 +328,8 @@ My Components
 
 #text-right {
 
-  width:50%; 
-  margin-left: 50%;
+  width:40%; 
+  margin-left: 60%;
   height: 70%;
   font-size: 1.2em;
   line-height: 1.6;
