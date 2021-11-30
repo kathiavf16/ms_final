@@ -71,7 +71,6 @@ Main Components
   
   height: 100vh;
   
-  
 }
 .cd-section:first-of-type > div::before {
   /* alert -> all scrolling effects are not visible on small devices */
@@ -277,7 +276,7 @@ My Components
 
 #imge img {
 
-  border-radius: 50%;
+  border-radius: 40%;
   border-style: solid;
   border: peru;
   border-width: medium;
