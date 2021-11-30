@@ -300,10 +300,10 @@ My Components
 
 #imge img {
 
-  border-radius: 80%;
+  border-radius: 1%;
   border-style: solid;
   border: peru;
-  border-width: medium;
+  border-width: thick;
   opacity: 0.9;
   align-content: center;
  
