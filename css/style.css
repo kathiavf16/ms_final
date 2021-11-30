@@ -255,48 +255,52 @@ My Components
 -------------------------------- */
 #holder {
   
-    width: 55%;
+    width: 45%;
     float: left;
     height: 70%;
     margin-left: 5%;
     align-content: center;
+    padding-left: 8%;
   
 }
 
 #bar {
   
-    width: 55%;
+    width: 45%;
     float: left;
     height: 70%;
     margin-left: 5%;
     align-content: center;
+    padding-left: 8%;
   
 }
 
 #gauge {
   
-    width: 55%;
+    width: 45%;
     float: left;
     height: 70%;
     margin-left: 5%;
     align-content: center;
+    padding-left: 8%;
   
 }
 
 #imge {
-  width: 55%; 
+  width: 45%; 
   height: 70%;
   font-size: 1.2em;
   line-height: 1.6;
   margin-left: 5%;
-  padding: 5% 5%;
+  padding: 0% 0% 10% 5%;
+
 
     
 }
 
 #imge img {
 
-  border-radius: 40%;
+  border-radius: 80%;
   border-style: solid;
   border: peru;
   border-width: medium;
@@ -308,10 +312,12 @@ My Components
 
 #bubble {
   
-  width: 55%;
-  float: left;
+  width: 45%; 
   height: 70%;
+  font-size: 1.2em;
+  line-height: 1.6;
   margin-left: 5%;
+  padding: 0% 0% 5% 6%;
 }
 
 .toolTip {
@@ -341,8 +347,8 @@ My Components
 }
 #text-left {
 
-  width:35%; 
-  margin-left: 60%;
+  width:45%; 
+  margin-left: 50%;
   height: 70%;
   font-size: 1.2em;
   line-height: 1.6;
