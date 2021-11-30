@@ -20,13 +20,13 @@
 <!-- hijacking: on/off - animation: none/scaleDown/rotate/gallery/catch/opacity/fixed/parallax -->
 
 <body data-hijacking="off" data-animation="scaleDown">
-
+<div class="container">
 	<header class='head1'>
 		
 		<h1> Air Pollution, Climate Change and Our Health<br> <a class="scroll-arrow">Interactive Narrative <br>↓<br><span class="lowlight">scroll</span></a></h1> <br>
 	</header>
 		
-	<section class="cd-section">
+	<section class="cd-section" id="wrapper">
 		
 		<div class="text" id="text-left"><br><br>
 			<h1>Air pollution and Climate Change</h1>
@@ -46,6 +46,7 @@
 			<img src="./img/co2.jpeg" alt="" style="height: 70%; width: 90%;">
 			<p style="font-style: italic; font-weight: bold;"> Carbon Monoxide (CO2) </p>
 		</div>
+		
 	</section>
 
 	<section class="cd-section">
@@ -55,7 +56,7 @@
 			<p style="font-style: italic; font-weight: bold;">Environmental Pollution</p>
 
 		</div> 
-		<div class="text" id="text-right">
+		<div class="text" id="text-left">
 			<br> <br> <br> 
 			<h1>What is Air Pollution?</h1> <br>
 			
@@ -88,7 +89,7 @@
 			<a href="https://www.epa.gov/outdoor-air-quality-data/air-data-basic-information" target="_blank">Link to
 				Source </a>
 		</div>
-		<div class="viz" id='gauge1'>
+		<div class="viz" id='gauge'>
 			<h1>The AQI is divided into six categories:</h1><br>
 			<br> <br> <br> <br> <br>
 			<p>Gauge Chart Goes Here</p>
@@ -96,7 +97,7 @@
 	</section>
 
 	<section class="cd-section">
-		<div class="text" id="text-right"> <br>
+		<div class="text" id="text-left"> <br>
 			<h1>Types of Air Pollutants</h1>
 			<br>
 			<p> EPA sets national air quality standards for six common pollutants, also called criteria pollutants, to protect
@@ -129,8 +130,8 @@
 			<p>
 		</div>
 
-		<div class="viz" id="bubble">
-			<h1>Title goes here - Bubble</h1><br>
+		<div class="viz" id="holder">
+			<h1>Title goes here - Gauge</h1><br>
 
 		</div>
 	</section>
@@ -165,5 +166,6 @@
 <script src="lib/d3.js"></script>
 <script src="lib/d3-array.js"></script>
 <script type="module" src="main.js"></script>
+</div>
 </body>
 </html>

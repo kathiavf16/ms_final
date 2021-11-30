@@ -5,6 +5,8 @@ Primary style
 -------------------------------- */
 *, *::after, *::before {
   box-sizing: border-box;
+ 
+  
 }
 
 html {
@@ -19,6 +21,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 
 
 body::before {
@@ -55,6 +58,7 @@ Main Components
 .cd-section {
   height: 100vh;
   color: #2c240f;
+  max-width: 80%;
 }
 .cd-section h2  {
   
@@ -70,6 +74,7 @@ Main Components
 .cd-section:first-of-type > div {
   
   height: 100vh;
+  
   
 }
 .cd-section:first-of-type > div::before {
@@ -248,29 +253,44 @@ Main Components
 My Components 
 
 -------------------------------- */
-
-#bar {
+#holder {
   
-    width: 60%;
+    width: 55%;
     float: left;
     height: 70%;
+    margin-left: 5%;
     align-content: center;
   
 }
 
-#gauge1 {
+#bar {
   
-    width: 60%;
+    width: 55%;
     float: left;
     height: 70%;
+    margin-left: 5%;
+    align-content: center;
+  
+}
+
+#gauge {
+  
+    width: 55%;
+    float: left;
+    height: 70%;
+    margin-left: 5%;
     align-content: center;
   
 }
 
 #imge {
-    width: 60%;
-    float: left;
-    height: 70%;
+  width: 55%; 
+  height: 70%;
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-left: 5%;
+  padding: 5% 5%;
+
     
 }
 
@@ -288,9 +308,10 @@ My Components
 
 #bubble {
   
-    width: 60%;
-    float: left;
-    height: 70%;
+  width: 55%;
+  float: left;
+  height: 70%;
+  margin-left: 5%;
 }
 
 .toolTip {
@@ -320,18 +341,7 @@ My Components
 }
 #text-left {
 
-  width:40%; 
-  margin-left: 60%;
-  height: 70%;
-  font-size: 1.2em;
-  line-height: 1.6;
-  padding: 5% 5%;
-
-}
-
-#text-right {
-
-  width:40%; 
+  width:35%; 
   margin-left: 60%;
   height: 70%;
   font-size: 1.2em;
@@ -361,6 +371,10 @@ header a {
   color:rgb(101, 180, 77);
   font-weight: bold;
   font-size: x-large;
+}
+header {
+  max-width: 90%;
+  margin-left: 5%;
 }
 
 .head1 {

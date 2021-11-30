@@ -3,11 +3,11 @@
 
 import { Test } from "./Test.js";
 import { Bubble } from "./Bubble.js"
-//import {Gauge} from "./Gauge.js";
+import {Gauge} from "./Gauge.js";
 
 let test;
 let bubble;
-//let gauge;
+let gauge;
 
 let state = {
 
@@ -26,7 +26,7 @@ Promise.all([
 ]).then(([test, bubble]) => {
   state.test = test;
   state.bubble = bubble;
-  //state.causes = causes;
+  state.gauge = gauge;
  
    console.log("state: ", state);
   init();
@@ -35,17 +35,17 @@ Promise.all([
 function init(){
   test = new Test(state, setGlobalState);
   bubble = new Bubble(state, setGlobalState);
-  //gauge = new Gauge(state, setGlobalState);
+  gauge = new Gauge(state, setGlobalState);
   
   console.log("table", test);
   draw();
 }
 
 function draw() {
-  console.log("test", test, bubble);
+  console.log("test", test, bubble, gauge);
   test.draw(state, setGlobalState);
   bubble.draw(state, setGlobalState);
-  //gauge.draw(state, setGlobalState);
+  gauge.draw(state, setGlobalState);
     
 }
 

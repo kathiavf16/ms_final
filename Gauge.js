@@ -5,7 +5,7 @@ class Gauge {
         // Code goes here
 
         var data = [
-            40, 20
+            40, 20, 30, 30
         ];
         var text = "";
 
@@ -15,7 +15,9 @@ class Gauge {
         var duration = 0;
 
         var radius = Math.min(width, height) / 2;
-        var color = d3.scaleOrdinal(d3.schemeCategory20);
+        var color = d3.scaleOrdinal()
+            .domain([0, 1])
+            .range(["red", "blue", "green"])
 
         var anglesRange = 0.5 * Math.PI;
 
@@ -25,12 +27,9 @@ class Gauge {
             .attr('width', width)
             .attr('height', height);
 
-    }
 
-    draw(state, setGlobalState) {
-
-         var g = svg.append('g')
-             .attr('transform', 'translate(' + (width / 2) + ',' + (height / 2) + ')');
+        var g = svg.append('g')
+            .attr('transform', 'translate(' + (width / 2) + ',' + (height / 2) + ')');
 
          var arc = d3.arc()
              .innerRadius(radius - thickness)
@@ -56,11 +55,17 @@ class Gauge {
                  this._current = i;
              });
 
+          g.append('text')
+              .attr('text-anchor', 'middle')
+              .attr('dy', '.35em')
+              .text('70%');
 
-         g.append('text')
-             .attr('text-anchor', 'middle')
-             .attr('dy', '.35em')
-             .text('70%');
+
+    }
+
+    draw(state, setGlobalState) {
+
+           
 
     }
 }
