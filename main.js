@@ -2,7 +2,7 @@
 // Airplane Crashes and Fatalities
 
 import { Test } from "./Test.js";
-import { Bubble } from "./Bubble.js";
+import { Bubble } from "./Bubble.js"
 //import {Gauge} from "./Gauge.js";
 
 let test;
@@ -20,8 +20,8 @@ let state = {
 };
 
 Promise.all([
-  d3.csv("../data/test.csv", d3.autoType),
-  d3.csv("../data/bubble20.csv", d3.autoType),
+  d3.csv("./data/test.csv", d3.autoType),
+  d3.csv("./data/bubble20.csv", d3.autoType),
  
 ]).then(([test, bubble]) => {
   state.test = test;
