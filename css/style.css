@@ -317,7 +317,8 @@ My Components
   align-content: center;
   box-shadow: 10px 10px rgb(87, 59, 59);
   height: 50%;
-  width: 70%;
+  width: 85%;
+  padding: 1%;
  
   
 }
@@ -355,6 +356,7 @@ My Components
 .text p {
 
   font-family: 'Signika Negative', sans-serif;
+  
 
 }
 #text-left {
