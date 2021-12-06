@@ -295,6 +295,27 @@ My Components
   
 }
 
+#sunburst {
+  
+    width: 80%;
+    float: left;
+    height: 70%;
+    margin-left: 10%;
+    align-content: center;
+    padding-left: 8%;
+  
+}
+
+#sunburst2 {
+  
+    width: 80%;
+    float: left;
+    height: 70%;
+    margin-left: 10%;
+    align-content: center;
+    padding-left: 8%;
+  
+}
 #imge {
   width: 35%; 
   height: 70%;
@@ -317,7 +338,7 @@ My Components
   align-content: center;
   box-shadow: 10px 10px rgb(87, 59, 59);
   height: 50%;
-  width: 85%;
+  width: 75%;
   padding: 1%;
  
   
@@ -497,3 +518,22 @@ Gauge styles
       .pie .value-text{
         font-size: 3em;
       }
+
+.slice {
+            cursor: pointer;
+        }
+
+        .slice .main-arc {
+            stroke: #fff;
+            stroke-width: 1px;
+        }
+
+        .slice .hidden-arc {
+            fill: none;
+        }
+
+        .slice text {
+            pointer-events: none;
+            dominant-baseline: middle;
+            text-anchor: middle;
+        }      

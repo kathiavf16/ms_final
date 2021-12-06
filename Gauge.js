@@ -11,7 +11,7 @@ class Gauge {
 
         var width = 260;
         var height = 260;
-        var thickness = 40;
+        var thickness = 50;
         var duration = 0;
 
         var radius = Math.min(width, height) / 2;
@@ -23,9 +23,10 @@ class Gauge {
 
         var svg = d3.select("#gauge")
             .append('svg')
-            .attr('class', 'pie')
-            .attr('width', width)
-            .attr('height', height);
+            .attr("preserveAspectRatio", "xMinYMin meet")
+            .attr("viewBox", "0 0 280 500")
+            .classed("svg-content", true)
+            .attr('class', 'pie');
 
 
         var g = svg.append('g')

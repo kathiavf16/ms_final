@@ -8,8 +8,9 @@ class Bubble {
       this.width = 450;
       this.height = 600;
 
-      this.svg = d3.select("#bubble")
-      .append("svg")
+      this.svg = d3.select("#bubble").append("svg")
+      .attr("preserveAspectRatio", "xMinYMin meet")
+      .attr("viewBox", "0 0 1000 700")
       .attr("height", this.height)
       .attr("width", this.width)
 
