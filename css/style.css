@@ -4,9 +4,7 @@ Primary style
 
 -------------------------------- */
 *, *::after, *::before {
-  box-sizing: border-box;
- 
-  
+  box-sizing: border-box; 
 }
 
 html {
@@ -294,7 +292,16 @@ My Components
     padding-left: 8%;
   
 }
-
+#line {
+  
+    width: 80%;
+    float: left;
+    height: 70%;
+    margin-left: 10%;
+    align-content: center;
+    padding-left: 8%;
+  
+}
 #sunburst {
   
     width: 80%;

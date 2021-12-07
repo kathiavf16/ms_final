@@ -28,7 +28,7 @@ class Sunburst {
             });
         var svg = d3.select("#sunburst").append("svg")
             .attr("preserveAspectRatio", "xMinYMin meet")
-            .attr("viewBox", "0 0 1000 700")
+            .attr("viewBox", "0 0 1200 700")
             .classed("svg-content", true)
             .append("g")
             .attr("transform", "translate(" + width / 2 + "," + (height / 2) + ")");

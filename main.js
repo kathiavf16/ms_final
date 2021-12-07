@@ -6,6 +6,7 @@ import { Bubble } from "./Bubble.js"
 import { Gauge} from "./Gauge.js";
 import { Sunburst} from "./Sunburst.js";
 import {Sunburst2} from "./Sunburst2.js";
+import {Line} from "./Line.js";
 
 
 let test;
@@ -13,6 +14,7 @@ let bubble;
 let gauge;
 let sunburst;
 let sunburst2;
+let line;
 
 let state = {
 
@@ -23,6 +25,7 @@ let state = {
   gauge: null,
   sunburst: null,
   sunburst2: null,
+  line: null,
   
 };
 
@@ -36,6 +39,7 @@ Promise.all([
   state.gauge = gauge;
   state.sunburst = sunburst;
   state.sunburst2 = sunburst;
+  state.line = line;
  
    console.log("state: ", state);
   init();
@@ -47,18 +51,20 @@ function init(){
   gauge = new Gauge(state, setGlobalState);
   sunburst = new Sunburst(state, setGlobalState);
   sunburst2 = new Sunburst2(state, setGlobalState);
+  line = new Line(state, setGlobalState);
   
   console.log("table", test);
   draw();
 }
 
 function draw() {
-  console.log("test", test, bubble, gauge, sunburst, sunburst2);
+  console.log("test", test, bubble, gauge, sunburst, sunburst2, line);
   test.draw(state, setGlobalState);
   bubble.draw(state, setGlobalState);
   gauge.draw(state, setGlobalState);
   sunburst.draw(state, setGlobalState);
   sunburst2.draw(state, setGlobalState);
+  line.draw(state, setGlobalState);
     
 }
 
