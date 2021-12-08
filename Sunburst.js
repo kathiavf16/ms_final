@@ -3,6 +3,24 @@ class Sunburst {
     constructor(state, setGlobalState) {
 
         // Code goes here
+        const sunData = state.sunburst.map(d => ({
+            "indicator": d.IndicatorName,
+            "country": d.CountryName,
+            "ecostatus": d.EcoStatus,
+            "value": d.IndicatorValue,
+            
+
+        }))
+        // grouping data
+        let group = d3.group(sunData, d => d.indicator, d => d.ecostatus)
+        //let hierarchy = d3.hierarchy(group)
+        // debuging
+        
+        
+
+
+        //console.log("sun: ", hierarchy)
+
         var width = 800,
             height = 650,
             /* ww w. d e  m o 2  s  .  c  o  m*/
@@ -39,16 +57,17 @@ class Sunburst {
                 chart.attr("height", targetWidth / aspect);
             });
         setTimeout(function () {
-            var root = d3.hierarchy(menu);
+            var root = d3.hierarchy(group);
             root.sum(function (d) {
-                return !d.children || d.children.length === 0 ? d.size : 0;
+                return !d.children || d.children.length === 0 ? d.value : 0;
             });
+            console.log("d", root); //
             svg.selectAll("path")
                 .data(partition(root).descendants())
                 .enter().append("path")
                 .attr("d", arc)
                 .style("fill", function (d) {
-                    return color((d.children ? d : d.parent).data.name);
+                    return color(d.data.country);
                 })
                 .on("click", click)
                 .append("title")
@@ -348,6 +367,7 @@ class Sunburst {
                 }
             ]
         };
+        console.log("menu:", menu);
     } //end of constructor
 
     draw(state, setGlobalState) {

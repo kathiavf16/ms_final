@@ -1,0 +1,148 @@
+﻿ref_no,IndicatorName,CountryName,EcoStatus,IndicatorValue
+1,CO2,China,Upper middle income,10313460
+2,CO2,United States,High income,4981300
+3,CO2,India,Lower middle income,2434520
+4,CO2,Russian Federation,Upper middle income,1607550
+5,CO2,Japan,High income,1106150
+6,CO2,Germany,High income,709540
+7,CO2,"Korea, Rep.",High income,630870
+8,CO2,"Iran, Islamic Rep.",Lower middle income,629290
+9,CO2,Indonesia,Lower middle income,583110
+10,CO2,Canada,High income,574400
+11,CO2,Saudi Arabia,High income,514600
+12,CO2,Mexico,Upper middle income,472140
+13,CO2,South Africa,Upper middle income,433250
+14,CO2,Brazil,Upper middle income,427710
+15,CO2,Turkey,Upper middle income,412970
+16,CO2,Australia,High income,386620
+17,CO2,United Kingdom,High income,358800
+18,CO2,Italy,High income,324850
+19,CO2,Poland,High income,312740
+20,CO2,France,High income,309960
+21,CO2,Spain,High income,258340
+22,CO2,Thailand,Upper middle income,257860
+23,CO2,Vietnam,Lower middle income,257860
+24,CO2,"Egypt, Arab Rep.",Lower middle income,246260
+25,CO2,Malaysia,Upper middle income,239620
+26,CO2,Kazakhstan,Upper middle income,220450
+27,CO2,Pakistan,Lower middle income,208370
+28,CO2,United Arab Emirates,High income,200300
+29,CO2,Iraq,Upper middle income,188140
+30,CO2,Ukraine,Lower middle income,185370
+31,CO2,Argentina,Upper middle income,177410
+32,CO2,Algeria,Lower middle income,151670
+33,CO2,Netherlands,High income,151170
+34,CO2,Philippines,Lower middle income,142240
+35,CO2,Venezuela,n/a,138160
+36,CO2,Nigeria,Lower middle income,130670
+37,CO2,Uzbekistan,Lower middle income,112090
+38,CO2,Czech Republic,High income,102480
+39,CO2,Belgium,High income,93470
+40,CO2,Qatar,High income,90170
+41,CO2,Kuwait,High income,89460
+42,CO2,Chile,High income,86620
+43,CO2,Bangladesh,Lower middle income,82760
+44,CO2,Colombia,Upper middle income,79490
+45,CO2,Romania,Upper middle income,74880
+46,CO2,Oman,High income,73370
+47,CO2,Turkmenistan,Upper middle income,71730
+48,CO2,Morocco,Lower middle income,66680
+49,CO2,Greece,High income,65290
+1,CH4,China,Upper middle income,1238630
+2,CH4,Russian Federation,Upper middle income,849570
+3,CH4,India,Lower middle income,666510
+4,CH4,United States,High income,622590
+5,CH4,Brazil,Upper middle income,416280
+6,CH4,Indonesia,Lower middle income,287500
+7,CH4,Pakistan,Lower middle income,151020
+8,CH4,"Iran, Islamic Rep.",Lower middle income,149690
+9,CH4,Mexico,Upper middle income,144610
+10,CH4,Australia,High income,139070
+11,CH4,Nigeria,Lower middle income,127900
+12,CH4,Argentina,Upper middle income,117850
+13,CH4,Uzbekistan,Lower middle income,105930
+14,CH4,Ethiopia,Low income,103110
+15,CH4,Canada,High income,93980
+16,CH4,Vietnam,Lower middle income,87750
+17,CH4,Thailand,Upper middle income,84140
+18,CH4,Bangladesh,Lower middle income,83790
+19,CH4,Afghanistan,Low income,81510
+20,CH4,Colombia,Upper middle income,76700
+21,CH4,Venezuela,n/a,72340
+22,CH4,Philippines,Lower middle income,67660
+23,CH4,Myanmar,Lower middle income,65790
+24,CH4,Ukraine,Lower middle income,62950
+25,CH4,Tanzania,Lower middle income,62650
+26,CH4,Sudan,Low income,58850
+27,CH4,France,High income,58340
+28,CH4,"Egypt, Arab Rep.",Lower middle income,56870
+29,CH4,Chad,Low income,53990
+30,CH4,Germany,High income,53370
+31,CH4,United Arab Emirates,High income,52960
+32,CH4,United Kingdom,High income,51210
+33,CH4,Turkmenistan,Upper middle income,49580
+34,CH4,Algeria,Lower middle income,49550
+35,CH4,Poland,High income,47540
+36,CH4,Turkey,Upper middle income,47400
+37,CH4,Malaysia,Upper middle income,46580
+38,CH4,South Africa,Upper middle income,45140
+39,CH4,Saudi Arabia,High income,44170
+40,CH4,Italy,High income,43670
+41,CH4,Azerbaijan,Upper middle income,43600
+42,CH4,Kazakhstan,Upper middle income,41360
+43,CH4,Kenya,Lower middle income,40250
+44,CH4,Spain,High income,39940
+45,CH4,"Congo, Dem. Rep.",Low income,38620
+46,CH4,Libya,Upper middle income,37790
+47,CH4,Angola,Lower middle income,35520
+48,CH4,South Sudan,Low income,34170
+49,CH4,Uganda,Low income,33250
+1,N2O,China,Upper middle income,538790
+2,N2O,India,Lower middle income,253790
+3,N2O,United States,High income,250060
+4,N2O,Brazil,Upper middle income,179200
+5,N2O,Indonesia,Lower middle income,95690
+6,N2O,Australia,High income,76760
+7,N2O,Cameroon,Lower middle income,62710
+8,N2O,Pakistan,Lower middle income,60950
+9,N2O,Russian Federation,Upper middle income,58610
+10,N2O,Ethiopia,Low income,52160
+11,N2O,Argentina,Upper middle income,47930
+12,N2O,Canada,High income,43120
+13,N2O,Mexico,Upper middle income,42250
+14,N2O,France,High income,38030
+15,N2O,"Iran, Islamic Rep.",Lower middle income,37580
+16,N2O,Nigeria,Lower middle income,37420
+17,N2O,Turkey,Upper middle income,34380
+18,N2O,Germany,High income,32900
+19,N2O,Central African Republic,Low income,32110
+20,N2O,Tanzania,Lower middle income,30340
+21,N2O,Sudan,Low income,29610
+22,N2O,Bangladesh,Lower middle income,29240
+23,N2O,United Kingdom,High income,28290
+24,N2O,Ukraine,Lower middle income,25310
+25,N2O,Chad,Low income,24920
+26,N2O,Vietnam,Lower middle income,24080
+27,N2O,South Sudan,Low income,23010
+28,N2O,"Egypt, Arab Rep.",Lower middle income,22320
+29,N2O,Colombia,Upper middle income,21720
+30,N2O,Poland,High income,21480
+31,N2O,Myanmar,Lower middle income,21340
+32,N2O,Spain,High income,20350
+33,N2O,Thailand,Upper middle income,19950
+34,N2O,South Africa,Upper middle income,18820
+35,N2O,Kenya,Lower middle income,18330
+36,N2O,Japan,High income,18010
+37,N2O,Italy,High income,17900
+38,N2O,Angola,Lower middle income,16440
+39,N2O,Uzbekistan,Lower middle income,16240
+40,N2O,"Congo, Dem. Rep.",Low income,15790
+41,N2O,Uganda,Low income,15460
+42,N2O,New Zealand,High income,15040
+43,N2O,Zambia,Lower middle income,14460
+44,N2O,Mali,Low income,13820
+45,N2O,Philippines,Lower middle income,13640
+46,N2O,Venezuela,n/a,13540
+47,N2O,Mongolia,Lower middle income,13190
+48,N2O,Niger,Low income,12250
+49,N2O,Algeria,Lower middle income,12110

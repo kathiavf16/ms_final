@@ -11,8 +11,8 @@ import {Line} from "./Line.js";
 
 let test;
 let bubble;
-let gauge;
 let sunburst;
+let gauge;
 let sunburst2;
 let line;
 
@@ -22,8 +22,8 @@ let state = {
   data: null,
   test: null,
   bubble: null,
-  gauge: null,
   sunburst: null,
+  gauge: null,
   sunburst2: null,
   line: null,
   
@@ -32,13 +32,14 @@ let state = {
 Promise.all([
   d3.csv("./data/test.csv", d3.autoType),
   d3.csv("./data/bubble20.csv", d3.autoType),
+  d3.csv("./data/sunburst.csv", d3.autoType),
  
-]).then(([test, bubble]) => {
+]).then(([test, bubble, sunburst]) => {
   state.test = test;
   state.bubble = bubble;
-  state.gauge = gauge;
   state.sunburst = sunburst;
-  state.sunburst2 = sunburst;
+  state.gauge = gauge;
+  state.sunburst2 = sunburst2;
   state.line = line;
  
    console.log("state: ", state);
@@ -48,21 +49,21 @@ Promise.all([
 function init(){
   test = new Test(state, setGlobalState);
   bubble = new Bubble(state, setGlobalState);
-  gauge = new Gauge(state, setGlobalState);
   sunburst = new Sunburst(state, setGlobalState);
+  gauge = new Gauge(state, setGlobalState);
   sunburst2 = new Sunburst2(state, setGlobalState);
   line = new Line(state, setGlobalState);
   
-  console.log("table", test);
+  console.log("table", test, sunburst);
   draw();
 }
 
 function draw() {
-  console.log("test", test, bubble, gauge, sunburst, sunburst2, line);
+  console.log("test", test, bubble, sunburst, gauge, sunburst2, line);
   test.draw(state, setGlobalState);
   bubble.draw(state, setGlobalState);
-  gauge.draw(state, setGlobalState);
   sunburst.draw(state, setGlobalState);
+  gauge.draw(state, setGlobalState);
   sunburst2.draw(state, setGlobalState);
   line.draw(state, setGlobalState);
     
