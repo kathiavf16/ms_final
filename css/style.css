@@ -323,6 +323,17 @@ My Components
     padding-left: 8%;
   
 }
+
+#heatmap {
+  
+    width: 80%;
+    float: left;
+    height: 70%;
+    margin-left: 10%;
+    align-content: center;
+    padding-left: 8%;
+  
+}
 #imge {
   width: 35%; 
   height: 70%;
