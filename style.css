@@ -1,297 +1,104 @@
-
-*{
-
-    margin: 0 ;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Proxima Nova',Helvetica,Arial,sans-serif;
-    font-style: normal;
-}
-
-header, footer{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-header h1, footer h1{
-    font-size: 3.75em;
-}
-
-.block1 p, .block2 p, .block3 p, .block4 p, .block5 p{
-    color: lightyellow;
-    padding-left: 5em;
-    font-family: 'Proxima Nova',Helvetica,Arial,sans-serif;
-    text-align: start;
-
-}
-.init-header{
-    
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: rgb(235, 212, 203);
-}
-footer{
-  
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: rgb(235, 212, 203);
-
-}
-.block1, .block2, .block3, .block4, .block5 {
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
-
-} 
-
-.block1 h1, .block2 h1, .block3 h1, .block4 h1, .block5 h1{
-    height: 10vh;
-    display: flex;
-    justify-content: left;
-    padding-left: 5em;
-    align-items: center;
-    font-size: 2.5em;
-    font-style: italic; 
-    color: rgb(226, 155, 108);
-    
-}
-
-/*  viz 1*/
-#viz-1, .footer {
-    
-    background-color: rgb(65, 36, 17);  
-    color:lightyellow;
-
-} 
-
-#linechart {
-    position: absolute;
-    font-size: 25px;
-    height: 800px;
-    width: 1000px;
-    left: 260px;
-    top: 450px;
-    color: black;
-   
-    
-}
-
-#linechart2 {
-    position: absolute;
-    font-size: 25px;
-    height: 800px;
-    width: 1000px;
-    right: 80px;
-    top: 400px;
-    color: rgb(0, 0, 0);
-   
-}
-.text-viz-1{
-   font-size: 1.375em; 
-   width: 75em;
-   position: relative;
-   padding-left: 7em;
-
-}
-
-.text-viz-b{
-    font-size: 1.375em; 
-    width: 56.25em;
-    position: relative;
-    padding-left: 5em;
-    left:40%;
-    top: 40%;
+body {
+  font-family: 'Mulish', sans-serif;
+  margin: 0;
  
- }
- .text-viz-s{
-    font-size: 22px; 
-    width: 900px;
-    position: relative;
-    left: 45%;
-    top: 0%;
- }
- .text-viz-z{
-  font-size: 22px; 
-  width: 900px;
-  position: relative;
-  padding-left: 5em;
-  left:10%;
-  top: 10%;
 }
-
-
-/*  viz 2*/
-
-#table {
-
-    position: absolute;
-    height: 90px;
-    width: 900px;
-    top:90px;
-    right: 100px;
-    color: rgb(226, 155, 108);
+p {
+     font-size: 1.1em;
+     line-height: 1.6;
+}
+h2 {
+   font-weight: 800;
+   text-align: center;
+   font-family: 'Mulish', sans-serif;
 
 }
-#viz-2 {
-    background-color:  rgb(65, 36, 17);  
-    color: lightyellow;
-} 
-
-
-.text-viz-2{
-    position: absolute;
-    font-size: 30px;
-    height: 100px;
-    width: 800px;
-    right: 1400px;
-    bottom: 500px;
-    color:lightyellow;
-}
-
-/*  viz 3*/
-
-#bubble {
-    height: 80px;
-    position: absolute;
-    top: 10%;
-    left: 0%;
-    margin-top: 40px;
-    cursor: grab;
-    animation-duration: 3s;
-    animation-name: bounce;
-}
-
-#pie{
-   
-    margin-left: 30px;
-    width: 800px;
-    height: 100px;
-}
-
-#bar {
-  
-    position: initial;
-    top: 0px;
-    left: 0px;
-}
-.rect:hover {
-  fill: rgba(190, 9, 9, 0.959);
-   
-  
-}
-
-/*  viz 4*/
-
-.logo-pic01 {
-    height: 100px;
-    position: absolute;
-    top: 50%;
-    left: 0%;
-}
-
-.label {
-    fill: lightyellow;
-    text-anchor: start;
-    font-weight: bolder;
-  }
- image:hover{
-   width: 50px;
-   height: 30;
-   
- } 
-  
-  .axis {
-    font-size: 16px;
-    font-weight: lighter;
- 
-  }
-
-.toolTip {
-    position: absolute;
-    display: none;
-    min-width: 80px;
-    height: auto;
-    background: none repeat scroll 0 0 rgb(63, 34, 20);
-    border: 1px solid lightyellow;
-    padding: 14px;
-    pointer-events: none;
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
-    color: lightyellow;
-  }
-
-  
-.axis-x-axis{
-    color:lightyellow;
-    stroke-width: 4;
-    font-size: 18px;
+.container {
+    max-width: 60%;
+    text-align: left;
+    margin-top: 48px;
+    position:absolute;
+    margin-left: 25%;
+    align-content: center;
     
-  
-  }
-  
-  .axis-y-axis{
-    color:rgb(241, 241, 215);
-    stroke-width: 4;
-    font-size: 18px;
-    
-    
-  }
-  .axis-label {
-    font-size: 16px;
-    fill: rgb(226, 155, 108);
-    text-anchor: middle;
-    font-weight: bold;
-    padding: 5em;
-  }
-  .grid{
-    color: lightslategray;
-  
-  }
-  .overlay {
-    fill: none;
-    pointer-events: all;
-  }
-  
-  .focus circle {
-    fill: #F1F3F3;
-    stroke: red;
-    stroke-width: 5px;
-  }
-  .focus text {
-    color: BLUE;
-  }  
-  .hover-line {
-    stroke: lightyellow;
-    stroke-width: 5px;
-    stroke-dasharray: 3,3;
-  }
-  
-  .focus{
-    position: absolute;
-    min-width: 80px;
-    height: auto;
-    background: none repeat scroll 0 0 rgb(26, 29, 29);
-    border: 1px solid lightyellow;
-    padding: 14px;
-    pointer-events: none;
-    text-align: center;
-    font-size: 18px;
-    color: lightyellow;
-  }
+}
 
-/*animation */
+/* settings sidenav */
 
-.block1, .block2, .block3, .block4, .block5, .footer {
-    opacity: 0;
-    transition: .3s;
+.sidenav {
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(176, 224, 214);
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 18px 6px 18px;
+  text-decoration: none;
+  font-size: 1em;
+  color: #0e0d0d;
+  display: block;
+  font-family: 'Mulish', sans-serif;
+  align-content: center;
+  font-weight: bolder;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav p,  h3 {
+padding: 6px 10px 6px 18px;
+font-size: 1em;
+}
+
+.main {
+  margin-left: 20%; /* Same as the width of the sidenav */
+  font-size: 0.9em; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* settings topnav */
+.topnav {
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  margin-left: 20%;
+  position: fixed;
+  width: 87%;
   
 }
 
-.block1.show, .block2.show, .block3.show, .block4.show, .block5.show, .footer.show {
-    opacity: 1;
+.topnav p{
+  color: #f2f2f2;
+  text-align: left;
+  padding: 0px 9%;
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.5em;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+#heatmap{
+  background-color: rgb(129, 127, 124);
+  align-content: center;
+
 
 }

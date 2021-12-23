@@ -8,10 +8,10 @@ const margin = {
         top: 80,
         right: 25,
         bottom: 30,
-        left: 40
+        left: 160
     },
-    width = 450 - margin.left - margin.right,
-    height = 450 - margin.top - margin.bottom;
+    width = 650 - margin.left - margin.right,
+    height = 900 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
 const svg = d3.select("#heatmap")
@@ -22,11 +22,11 @@ const svg = d3.select("#heatmap")
     .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
 //Read the data
-d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/heatmap_data.csv").then(function (data) {
+d3.csv("https://raw.githubusercontent.com/kathiavf16/ms_final/main/data/greenhouse.csv").then(function (data) {
 
     // Labels of row and columns -> unique identifier of the column called 'group' and 'variable'
-    const myGroups = Array.from(new Set(data.map(d => d.group)))
-    const myVars = Array.from(new Set(data.map(d => d.variable)))
+    const myGroups = Array.from(new Set(data.map(d => d.IndicatorName)))
+    const myVars = Array.from(new Set(data.map(d => d.CountryName)))
     console.log("group", myGroups, myVars)
     // Build X scales and axis,
     const x = d3.scaleBand()
@@ -35,6 +35,7 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/he
         .padding(0.05);
     svg.append("g")
         .style("font-size", 15)
+        .style("color", "white")
         .attr("transform", `translate(0, ${height})`)
         .call(d3.axisBottom(x).tickSize(0))
         .select(".domain").remove()
@@ -45,14 +46,15 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/he
         .domain(myVars)
         .padding(0.05);
     svg.append("g")
-        .style("font-size", 15)
+        .style("font-size", 10)
+        .style("color", "white")
         .call(d3.axisLeft(y).tickSize(0))
         .select(".domain").remove()
 
     // Build color scale
     const myColor = d3.scaleSequential()
-        .interpolator(d3.interpolateInferno)
-        .domain([1, 100])
+        .interpolator(d3.interpolatePuBuGn)
+        .domain([0, 32.0])
 
     // create a tooltip
     const tooltip = d3.select("#heatmap")
@@ -75,7 +77,7 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/he
     }
     const mousemove = function (event, d) {
         tooltip
-            .html("The exact value of<br>this cell is: " + d.value)
+            .html("The exact value of<br>this cell is: " + d.tonnes_pc)
             .style("left", (event.x) / 2 + "px")
             .style("top", (event.y) / 2 + "px")
     }
@@ -90,21 +92,21 @@ d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/he
     // add the squares
     svg.selectAll()
         .data(data, function (d) {
-            return d.group + ':' + d.variable;
+            return d.group + ':' + d.CountryName;
         })
         .join("rect")
         .attr("x", function (d) {
-            return x(d.group)
+            return x(d.IndicatorName)
         })
         .attr("y", function (d) {
-            return y(d.variable)
+            return y(d.CountryName)
         })
         .attr("rx", 4)
         .attr("ry", 4)
         .attr("width", x.bandwidth())
         .attr("height", y.bandwidth())
         .style("fill", function (d) {
-            return myColor(d.value)
+            return myColor(d.tonnes_pc)
         })
         .style("stroke-width", 4)
         .style("stroke", "none")
