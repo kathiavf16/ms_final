@@ -24,8 +24,8 @@ class Line {
        d3.csv("https://raw.githubusercontent.com/kathiavf16/ms_final/main/data/line.csv").then(function (data) {
 
            // group the data: I want to draw one line per group
-           const sumstat = d3.group(data, d => d.Name); // nest function allows to group the calculation per level of a factor
-
+           const sumstat = d3.group(data, d => d.Name); // snest function allows to group the calculation per level of a factor
+           console.log("sum", sumstat);
            // Add X axis --> it is a date format
            const x = d3.scaleLinear()
                .domain(d3.extent(data, function (d) {
