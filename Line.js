@@ -10,7 +10,7 @@ class Line {
                bottom: 30,
                left: 60
            },
-           width = 460 - margin.left - margin.right,
+           width = 660 - margin.left - margin.right,
            height = 400 - margin.top - margin.bottom;
 
        // append the svg object to the body of the page
@@ -22,83 +22,55 @@ class Line {
            .attr("transform", `translate(${margin.left},${margin.top})`);
 
        //Read the data
-       d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/3_TwoNumOrdered_comma.csv",
+       d3.csv("https://raw.githubusercontent.com/kathiavf16/ms_final/main/data/line.csv").then(function (data) {
 
-           // When reading the csv, I must format variables:
-           function (d) {
-               return {
-                   date: d3.timeParse("%Y-%m-%d")(d.date),
-                   value: d.value
-               }
-           }).then(
+           // group the data: I want to draw one line per group
+           const sumstat = d3.group(data, d => d.Name); // nest function allows to group the calculation per level of a factor
 
-           // Now I can use this dataset:
-           function (data) {
+           // Add X axis --> it is a date format
+           const x = d3.scaleLinear()
+               .domain(d3.extent(data, function (d) {
+                   return d.year;
+               }))
+               .range([0, width]);
+           svg.append("g")
+               .attr("transform", `translate(0, ${height})`)
+               .call(d3.axisBottom(x).ticks(5));
 
-               // Add X axis --> it is a date format
-               const x = d3.scaleTime()
-                   .domain(d3.extent(data, function (d) {
-                       return d.date;
-                   }))
-                   .range([0, width]);
-               svg.append("g")
-                   .attr("transform", `translate(0, ${height})`)
-                   .call(d3.axisBottom(x));
+           // Add Y axis
+           const y = d3.scaleLinear()
+               .domain([0, d3.max(data, function (d) {
+                   return +d.mean;
+               })])
+               .range([height, 0]);
+           svg.append("g")
+               .call(d3.axisLeft(y));
 
-               // Max value observed:
-               const max = d3.max(data, function (d) {
-                   return +d.value;
+           // color palette
+           const color = d3.scaleOrdinal().domain([0,1,2,3,4,])
+               .range(['#e41a1c', '#377eb8', '#4daf4a', '#984ea3', '#ff7f00'])
+
+           // Draw the line
+           svg.selectAll(".line")
+               .data(sumstat)
+               .join("path")
+               .attr("fill", "none")
+               .attr("stroke", function (d) {
+                   return color(d[0])
                })
-
-               // Add Y axis
-               const y = d3.scaleLinear()
-                   .domain([0, max])
-                   .range([height, 0]);
-               svg.append("g")
-                   .call(d3.axisLeft(y));
-
-               // Set the gradient
-               svg.append("linearGradient")
-                   .attr("id", "line-gradient")
-                   .attr("gradientUnits", "userSpaceOnUse")
-                   .attr("x1", 0)
-                   .attr("y1", y(0))
-                   .attr("x2", 0)
-                   .attr("y2", y(max))
-                   .selectAll("stop")
-                   .data([{
-                           offset: "0%",
-                           color: "blue"
-                       },
-                       {
-                           offset: "100%",
-                           color: "red"
-                       }
-                   ])
-                   .enter().append("stop")
-                   .attr("offset", function (d) {
-                       return d.offset;
-                   })
-                   .attr("stop-color", function (d) {
-                       return d.color;
-                   });
-
-               // Add the line
-               svg.append("path")
-                   .datum(data)
-                   .attr("fill", "none")
-                   .attr("stroke", "url(#line-gradient)")
-                   .attr("stroke-width", 2)
-                   .attr("d", d3.line()
+               .attr("stroke-width", 1.5)
+               .attr("d", function (d) {
+                   return d3.line()
                        .x(function (d) {
-                           return x(d.date)
+                           return x(d.year);
                        })
                        .y(function (d) {
-                           return y(d.value)
+                           return y(+d.mean);
                        })
-                   )
+                       (d[1])
+               })
 
-           })
+       })
     } //end of constructor
 
     draw(state, setGlobalState) {
