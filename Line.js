@@ -3,14 +3,13 @@ class Line {
     constructor(state, setGlobalState) {
 
         // Code goes here
-       // set the dimensions and margins of the graph
        const margin = {
                top: 10,
                right: 30,
                bottom: 30,
                left: 60
            },
-           width = 660 - margin.left - margin.right,
+           width = 460 - margin.left - margin.right,
            height = 400 - margin.top - margin.bottom;
 
        // append the svg object to the body of the page
@@ -26,7 +25,7 @@ class Line {
 
            // group the data: I want to draw one line per group
            const sumstat = d3.group(data, d => d.Name); // nest function allows to group the calculation per level of a factor
-           console.log("namegr", sumstat);
+
            // Add X axis --> it is a date format
            const x = d3.scaleLinear()
                .domain(d3.extent(data, function (d) {
@@ -47,8 +46,8 @@ class Line {
                .call(d3.axisLeft(y));
 
            // color palette
-           const color = d3.scaleOrdinal().domain([0,1,2,3,4,])
-               .range(['#e41a1c', '#377eb8', '#4daf4a', '#984ea3', '#ff7f00'])
+           const color = d3.scaleOrdinal()
+               .range(['#e41a1c', '#377eb8', '#4daf4a', '#984ea3', '#ff7f00', '#ffff33', '#a65628', '#f781bf', '#999999'])
 
            // Draw the line
            svg.selectAll(".line")
