@@ -53,7 +53,7 @@ function init(){
   line = new Line(state, setGlobalState);
   barTop = new BarTop(state, setGlobalState);
   
-  console.log("table", test, sunburst);
+  console.log("table", sunburst);
   draw();
 }
 
