@@ -9,7 +9,7 @@ class Line {
                bottom: 30,
                left: 60
            },
-           width = 460 - margin.left - margin.right,
+           width = 660 - margin.left - margin.right,
            height = 400 - margin.top - margin.bottom;
 
        // append the svg object to the body of the page
@@ -29,7 +29,7 @@ class Line {
            // Add X axis --> it is a date format
            const x = d3.scaleLinear()
                .domain(d3.extent(data, function (d) {
-                   return d.year;
+                   return +d.year;
                }))
                .range([0, width]);
            svg.append("g")
@@ -61,7 +61,7 @@ class Line {
                .attr("d", function (d) {
                    return d3.line()
                        .x(function (d) {
-                           return x(d.year);
+                           return x(+d.year);
                        })
                        .y(function (d) {
                            return y(+d.mean);

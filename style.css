@@ -5,22 +5,32 @@ body {
 }
 p {
      font-size: 1.1em;
-     line-height: 1.6;
+     line-height: 1.7;
 }
 h2 {
    font-weight: 800;
    text-align: center;
    font-family: 'Mulish', sans-serif;
-
 }
+
+
+.h3-body {
+  font-size: 1.1em;
+  padding: 0%;
+}
+
+li {
+  font-size: 1.1em;
+  line-height: 1.7;
+}
+
 .container {
     max-width: 60%;
     text-align: left;
     margin-top: 48px;
     position:absolute;
     margin-left: 25%;
-    align-content: center;
-    
+    align-content: center; 
 }
 
 /* settings sidenav */
@@ -97,8 +107,7 @@ font-size: 1em;
 }
 
 #heatmap{
-  background-color: rgb(129, 127, 124);
+  background-color: rgb(255, 255, 255);
   align-content: center;
-
 
 }

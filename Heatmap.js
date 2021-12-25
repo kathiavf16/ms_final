@@ -35,7 +35,7 @@ d3.csv("https://raw.githubusercontent.com/kathiavf16/ms_final/main/data/greenhou
         .padding(0.05);
     svg.append("g")
         .style("font-size", 15)
-        .style("color", "white")
+        .style("color", "black")
         .attr("transform", `translate(0, ${height})`)
         .call(d3.axisBottom(x).tickSize(0))
         .select(".domain").remove()
@@ -47,7 +47,7 @@ d3.csv("https://raw.githubusercontent.com/kathiavf16/ms_final/main/data/greenhou
         .padding(0.05);
     svg.append("g")
         .style("font-size", 10)
-        .style("color", "white")
+        .style("color", "black")
         .call(d3.axisLeft(y).tickSize(0))
         .select(".domain").remove()
 
@@ -108,12 +108,12 @@ d3.csv("https://raw.githubusercontent.com/kathiavf16/ms_final/main/data/greenhou
         .style("fill", function (d) {
             return myColor(d.tonnes_pc)
         })
-        .style("stroke-width", 4)
-        .style("stroke", "none")
+        .style("stroke-width", 1)
+        .style("stroke", "black")
         .style("opacity", 0.8)
-        .on("mouseover", mouseover)
-        .on("mousemove", mousemove)
-        .on("mouseleave", mouseleave)
+        //.on("mouseover", mouseover)
+        //.on("mousemove", mousemove)
+        //.on("mouseleave", mouseleave)
 })
 
 // Add title to graph
