@@ -31,7 +31,7 @@ class BarTop {
            // List of groups = species here = value of the first column called group -> I show them on the X axis
            const groups = data.map(d => d.country)
 
-           console.log(groups)
+           console.log("countries",groups, subgroups)
 
            // Add X axis
            const x = d3.scaleBand()
@@ -44,7 +44,7 @@ class BarTop {
 
            // Add Y axis
            const y = d3.scaleLinear()
-               .domain([0, 40])
+               .domain([-10, 10])
                .range([height, 0]);
            svg.append("g")
                .call(d3.axisLeft(y));
@@ -72,15 +72,15 @@ class BarTop {
                    return subgroups.map(function (key) {
                        return {
                            key: key,
-                           value: d[key]
+                           value: +d[key]
                        };
                    });
                })
                .join("rect")
-               .attr("x", d => xSubgroup(d.key))
-               .attr("y", d => y(d.value))
+               .attr("x", d => xSubgroup(+d.key))
+               .attr("y", d => y(+d.value))
                .attr("width", xSubgroup.bandwidth())
-               .attr("height", d => height - y(d.value))
+               .attr("height", d => height - y(+d.value))
                .attr("fill", d => color(d.key));
 
        })
