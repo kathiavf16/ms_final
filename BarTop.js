@@ -11,7 +11,7 @@ class BarTop {
                bottom: 20,
                left: 50
            },
-           width = 460 - margin.left - margin.right,
+           width = 760 - margin.left - margin.right,
            height = 400 - margin.top - margin.bottom;
 
        // append the svg object to the body of the page
@@ -23,13 +23,13 @@ class BarTop {
            .attr("transform", `translate(${margin.left},${margin.top})`);
 
        // Parse the Data
-       d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/data_stacked.csv").then(function (data) {
+       d3.csv("https://raw.githubusercontent.com/kathiavf16/ms_final/main/data/top.csv").then(function (data) {
 
            // List of subgroups = header of the csv files = soil condition here
            const subgroups = data.columns.slice(1)
 
            // List of groups = species here = value of the first column called group -> I show them on the X axis
-           const groups = data.map(d => d.group)
+           const groups = data.map(d => d.country)
 
            console.log(groups)
 
@@ -66,7 +66,7 @@ class BarTop {
                // Enter in data = loop group per group
                .data(data)
                .join("g")
-               .attr("transform", d => `translate(${x(d.group)}, 0)`)
+               .attr("transform", d => `translate(${x(d.country)}, 0)`)
                .selectAll("rect")
                .data(function (d) {
                    return subgroups.map(function (key) {

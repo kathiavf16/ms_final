@@ -14,6 +14,7 @@ let gauge;
 let sunburst2;
 let line;
 let heatmap;
+let barTop;
 
 let state = {
 
@@ -36,7 +37,7 @@ Promise.all([
 ]).then(([test, bubble, sunburst, greenhouse]) => {
   //state.sunburst = sunburst;
   state.greenhouse = greenhouse;
-  //state.gauge = gauge;
+  state.barTop = barTop;
   //state.sunburst2 = sunburst2;
   state.line = line;
  
