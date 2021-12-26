@@ -26,20 +26,22 @@ let state = {
   //sunburst2: null,
   line: null,
   heatmap: null,
-  //barTop: null,
+  barTop: null,
   
 };
 
 Promise.all([
   d3.csv("./data/sunburst.csv", d3.autoType),
   d3.csv("./data/greenhouse.csv", d3.autoType),
+  d3.csv("./data/top.csv", d3.autoType),
  
-]).then(([test, bubble, sunburst, greenhouse]) => {
+]).then(([test, bubble, sunburst, greenhouse, barTop]) => {
   //state.sunburst = sunburst;
-  state.greenhouse = greenhouse;
-  //state.barTop = barTop;
-  //state.sunburst2 = sunburst2;
   state.line = line;
+  state.greenhouse = greenhouse;
+  state.barTop = barTop;
+  //state.sunburst2 = sunburst2;
+  
  
    console.log("state: ", state);
   init();
@@ -58,7 +60,7 @@ function init(){
 }
 
 function draw() {
-  console.log("test", sunburst, gauge, sunburst2, line);
+  console.log("test", sunburst, gauge, sunburst2, line, barTop);
   //sunburst.draw(state, setGlobalState);
   heatmap.draw(state, setGlobalState);
   //gauge.draw(state, setGlobalState);

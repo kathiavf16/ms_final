@@ -85,6 +85,7 @@ font-size: 1em;
   margin-left: 20%;
   position: fixed;
   width: 87%;
+  z-index:999;
   
 }
 
@@ -94,6 +95,7 @@ font-size: 1em;
   padding: 0px 9%;
   font-family: 'DM Serif Display', serif;
   font-size: 1.5em;
+  
 }
 
 .topnav a:hover {
