@@ -1,148 +1,148 @@
-﻿CountryName,IncomeGroup,incomeGroupCode,IndicatorName,IndicatorValue,PercIndVal,pop,tonnes_pc,subregion,region,subregion_code,region_code
-Afghanistan,Low income,2,CH4,81510,0.20%,38928, 2.09 ,Southern Asia,Asia,9,3
-Algeria,Lower middle income,3,CH4,49550,0.12%,43851, 1.13 ,Northern Africa,Africa,5,1
-Angola,Lower middle income,3,CH4,35520,0.09%,32866, 1.08 ,Sub-Saharan Africa,Africa,11,1
-Argentina,Upper middle income,4,CH4,117850,0.28%,45196, 2.61 ,Latin America and the Caribbean,Americas,4,2
-Australia,High income,1,CH4,139070,0.34%,25500, 5.45 ,Australia and New Zealand,Oceania,1,5
-Azerbaijan,Upper middle income,4,CH4,43600,0.11%,10139, 4.30 ,Western Asia,Asia,12,3
-Bangladesh,Lower middle income,3,CH4,83790,0.20%,164689, 0.51 ,Southern Asia,Asia,9,3
-Brazil,Upper middle income,4,CH4,416280,1.01%,212559, 1.96 ,Latin America and the Caribbean,Americas,4,2
-Canada,High income,1,CH4,93980,0.23%,37742, 2.49 ,Northern America,Americas,6,2
-Chad,Low income,2,CH4,53990,0.13%,16426, 3.29 ,Sub-Saharan Africa,Africa,11,1
-China,Upper middle income,4,CH4,1238630,2.99%,1439324, 0.86 ,Eastern Asia,Asia,2,3
-Colombia,Upper middle income,4,CH4,76700,0.19%,50883, 1.51 ,Latin America and the Caribbean,Americas,4,2
-Congo,Low income,2,CH4,38620,0.09%,5518, 7.00 ,Sub-Saharan Africa,Africa,11,1
-Egypt,Lower middle income,3,CH4,56870,0.14%,102334, 0.56 ,Northern Africa,Africa,5,1
-Ethiopia,Low income,2,CH4,103110,0.25%,114964, 0.90 ,Sub-Saharan Africa,Africa,11,1
-France,High income,1,CH4,58340,0.14%,65274, 0.89 ,Western Europe,Europe,13,4
-Germany,High income,1,CH4,53370,0.13%,83784, 0.64 ,Western Europe,Europe,13,4
-India,Lower middle income,3,CH4,666510,1.61%,1380004, 0.48 ,Southern Asia,Asia,9,3
-Indonesia,Lower middle income,3,CH4,287500,0.69%,273524, 1.05 ,South-eastern Asia,Asia,8,3
-Iran,Lower middle income,3,CH4,149690,0.36%,83993, 1.78 ,Southern Asia,Asia,9,3
-Italy,High income,1,CH4,43670,0.11%,60462, 0.72 ,Southern Europe,Europe,10,4
-Kazakhstan,Upper middle income,4,CH4,41360,0.10%,18777, 2.20 ,Central Asia,Asia,2,3
-Kenya,Lower middle income,3,CH4,40250,0.10%,53771, 0.75 ,Sub-Saharan Africa,Africa,11,1
-Libya,Upper middle income,4,CH4,37790,0.09%,6871, 5.50 ,Northern Africa,Africa,5,1
-Malaysia,Upper middle income,4,CH4,46580,0.11%,32366, 1.44 ,South-eastern Asia,Asia,8,3
-Mexico,Upper middle income,4,CH4,144610,0.35%,128933, 1.12 ,Latin America and the Caribbean,Americas,4,2
-Myanmar,Lower middle income,3,CH4,65790,0.16%,54410, 1.21 ,South-eastern Asia,Asia,8,3
-Nigeria,Lower middle income,3,CH4,127900,0.31%,206140, 0.62 ,Sub-Saharan Africa,Africa,11,1
-Pakistan,Lower middle income,3,CH4,151020,0.36%,220892, 0.68 ,Southern Asia,Asia,9,3
-Philippines,Lower middle income,3,CH4,67660,0.16%,109581, 0.62 ,South-eastern Asia,Asia,8,3
-Poland,High income,1,CH4,47540,0.11%,37847, 1.26 ,Eastern Europe,Europe,3,4
-Russian Federation,Upper middle income,4,CH4,849570,2.05%,145934, 5.82 ,Eastern Europe,Europe,3,4
-Saudi Arabia,High income,1,CH4,44170,0.11%,34814, 1.27 ,Western Asia,Asia,12,3
-South Africa,Upper middle income,4,CH4,45140,0.11%,59309, 0.76 ,Sub-Saharan Africa,Africa,11,1
-South Sudan,Low income,2,CH4,34170,0.08%,11194, 3.05 ,Sub-Saharan Africa,Africa,11,1
-Spain,High income,1,CH4,39940,0.10%,46755, 0.85 ,Southern Europe,Europe,10,4
-Sudan,Low income,2,CH4,58850,0.14%,43849, 1.34 ,Northern Africa,Africa,5,1
-Tanzania,Lower middle income,3,CH4,62650,0.15%,59734, 1.05 ,Sub-Saharan Africa,Africa,11,1
-Thailand,Upper middle income,4,CH4,84140,0.20%,69800, 1.21 ,South-eastern Asia,Asia,8,3
-Turkey,Upper middle income,4,CH4,47400,0.11%,84339, 0.56 ,Western Asia,Asia,12,3
-Turkmenistan,Upper middle income,4,CH4,49580,0.12%,6031, 8.22 ,Central Asia,Asia,2,3
-Uganda,Low income,2,CH4,33250,0.08%,45741, 0.73 ,Sub-Saharan Africa,Africa,11,1
-Ukraine,Lower middle income,3,CH4,62950,0.15%,43734, 1.44 ,Eastern Europe,Europe,3,4
-United Arab Emirates,High income,1,CH4,52960,0.13%,9890, 5.35 ,Western Asia,Asia,12,3
-United Kingdom,High income,1,CH4,51210,0.12%,67886, 0.75 ,Northern Europe,Europe,7,4
-United States,High income,1,CH4,622590,1.50%,331003, 1.88 ,Northern America,Americas,6,2
-Uzbekistan,Lower middle income,3,CH4,105930,0.26%,33469, 3.16 ,Central Asia,Asia,2,3
-Venezuela,Lower middle income,3,CH4,72340,0.17%,28436, 2.54 ,Latin America and the Caribbean,Americas,4,2
-Vietnam,Lower middle income,3,CH4,87750,0.21%,97339, 0.90 ,South-eastern Asia,Asia,8,3
-Algeria,Lower middle income,3,CO2,151670,0.37%,43851, 3.46 ,Northern Africa,Africa,5,1
-Argentina,Upper middle income,4,CO2,177410,0.43%,45196, 3.93 ,Latin America and the Caribbean,Americas,4,2
-Australia,High income,1,CO2,386620,0.93%,25500, 15.16 ,Australia and New Zealand,Oceania,1,5
-Bangladesh,Lower middle income,3,CO2,82760,0.20%,164689, 0.50 ,Southern Asia,Asia,9,3
-Belgium,High income,1,CO2,93470,0.23%,11590, 8.06 ,Western Europe,Europe,13,4
-Brazil,Upper middle income,4,CO2,427710,1.03%,212559, 2.01 ,Latin America and the Caribbean,Americas,4,2
-Canada,High income,1,CO2,574400,1.39%,37742, 15.22 ,Northern America,Americas,6,2
-Chile,High income,1,CO2,86620,0.21%,19116, 4.53 ,Latin America and the Caribbean,Americas,4,2
-China,Upper middle income,4,CO2,10313460,24.92%,1439324, 7.17 ,Eastern Asia,Asia,2,3
-Colombia,Upper middle income,4,CO2,79490,0.19%,50883, 1.56 ,Latin America and the Caribbean,Americas,4,2
-Czech,High income,1,CO2,102480,0.25%,10709, 9.57 ,Eastern Europe,Europe,3,4
-Egypt,Lower middle income,3,CO2,246260,0.59%,102334, 2.41 ,Northern Africa,Africa,5,1
-France,High income,1,CO2,309960,0.75%,65274, 4.75 ,Western Europe,Europe,13,4
-Germany,High income,1,CO2,709540,1.71%,83784, 8.47 ,Western Europe,Europe,13,4
-Greece,High income,1,CO2,65290,0.16%,10423, 6.26 ,Southern Europe,Europe,10,4
-India,Lower middle income,3,CO2,2434520,5.88%,1380004, 1.76 ,Southern Asia,Asia,9,3
-Indonesia,Lower middle income,3,CO2,583110,1.41%,273524, 2.13 ,South-eastern Asia,Asia,8,3
-Iran,Lower middle income,3,CO2,629290,1.52%,83993, 7.49 ,Southern Asia,Asia,9,3
-Iraq,Upper middle income,4,CO2,188140,0.45%,40223, 4.68 ,Western Asia,Asia,12,3
-Italy,High income,1,CO2,324850,0.78%,60462, 5.37 ,Southern Europe,Europe,10,4
-Japan,High income,1,CO2,1106150,2.67%,126476, 8.75 ,Eastern Asia,Asia,2,3
-Kazakhstan,Upper middle income,4,CO2,220450,0.53%,18777, 11.74 ,Central Asia,Asia,2,3
-Korea,High income,1,CO2,630870,1.52%,25779, 24.47 ,Eastern Asia,Asia,2,3
-Kuwait,High income,1,CO2,89460,0.22%,4271, 20.95 ,Western Asia,Asia,12,3
-Malaysia,Upper middle income,4,CO2,239620,0.58%,32366, 7.40 ,South-eastern Asia,Asia,8,3
-Mexico,Upper middle income,4,CO2,472140,1.14%,128933, 3.66 ,Latin America and the Caribbean,Americas,4,2
-Morocco,Lower middle income,3,CO2,66680,0.16%,36911, 1.81 ,Northern Africa,Africa,5,1
-Netherlands,High income,1,CO2,151170,0.37%,17135, 8.82 ,Western Europe,Europe,13,4
-Nigeria,Lower middle income,3,CO2,130670,0.32%,206140, 0.63 ,Sub-Saharan Africa,Africa,11,1
-Oman,High income,1,CO2,73370,0.18%,5107, 14.37 ,Western Asia,Asia,12,3
-Pakistan,Lower middle income,3,CO2,208370,0.50%,220892, 0.94 ,Southern Asia,Asia,9,3
-Philippines,Lower middle income,3,CO2,142240,0.34%,109581, 1.30 ,South-eastern Asia,Asia,8,3
-Poland,High income,1,CO2,312740,0.76%,37847, 8.26 ,Eastern Europe,Europe,3,4
-Qatar,High income,1,CO2,90170,0.22%,2881, 31.30 ,Western Asia,Asia,12,3
-Romania,Upper middle income,4,CO2,74880,0.18%,19238, 3.89 ,Eastern Europe,Europe,3,4
-Russian Federation,Upper middle income,4,CO2,1607550,3.88%,145934, 11.02 ,Eastern Europe,Europe,3,4
-Saudi Arabia,High income,1,CO2,514600,1.24%,34814, 14.78 ,Western Asia,Asia,12,3
-South Africa,Upper middle income,4,CO2,433250,1.05%,59309, 7.31 ,Sub-Saharan Africa,Africa,11,1
-Spain,High income,1,CO2,258340,0.62%,46755, 5.53 ,Southern Europe,Europe,10,4
-Thailand,Upper middle income,4,CO2,257860,0.62%,69800, 3.69 ,South-eastern Asia,Asia,8,3
-Turkey,Upper middle income,4,CO2,412970,1.00%,84339, 4.90 ,Western Asia,Asia,12,3
-Turkmenistan,Upper middle income,4,CO2,71730,0.17%,6031, 11.89 ,Central Asia,Asia,2,3
-Ukraine,Lower middle income,3,CO2,185370,0.45%,43734, 4.24 ,Eastern Europe,Europe,3,4
-United Arab Emirates,High income,1,CO2,200300,0.48%,9890, 20.25 ,Western Asia,Asia,12,3
-United Kingdom,High income,1,CO2,358800,0.87%,67886, 5.29 ,Northern Europe,Europe,7,4
-United States,High income,1,CO2,4981300,12.03%,331003, 15.05 ,Northern America,Americas,6,2
-Uzbekistan,Lower middle income,3,CO2,112090,0.27%,33469, 3.35 ,Central Asia,Asia,2,3
-Venezuela,Lower middle income,3,CO2,138160,0.33%,28436, 4.86 ,Latin America and the Caribbean,Americas,4,2
-Vietnam,Lower middle income,3,CO2,257860,0.62%,97339, 2.65 ,South-eastern Asia,Asia,8,3
-Algeria,Lower middle income,3,N2O,12110,0.03%,43851, 0.28 ,Northern Africa,Africa,5,1
-Angola,Lower middle income,3,N2O,16440,0.04%,32866, 0.50 ,Sub-Saharan Africa,Africa,11,1
-Argentina,Upper middle income,4,N2O,47930,0.12%,45196, 1.06 ,Latin America and the Caribbean,Americas,4,2
-Australia,High income,1,N2O,76760,0.19%,25500, 3.01 ,Australia and New Zealand,Oceania,1,5
-Bangladesh,Lower middle income,3,N2O,29240,0.07%,164689, 0.18 ,Southern Asia,Asia,9,3
-Brazil,Upper middle income,4,N2O,179200,0.43%,212559, 0.84 ,Latin America and the Caribbean,Americas,4,2
-Cameroon,Lower middle income,3,N2O,62710,0.15%,26546, 2.36 ,Sub-Saharan Africa,Africa,11,1
-Canada,High income,1,N2O,43120,0.10%,37742, 1.14 ,Northern America,Americas,6,2
-Central African Republic,Low income,2,N2O,32110,0.08%,4830, 6.65 ,Sub-Saharan Africa,Africa,11,1
-Chad,Low income,2,N2O,24920,0.06%,16426, 1.52 ,Sub-Saharan Africa,Africa,11,1
-China,Upper middle income,4,N2O,538790,1.30%,1439324, 0.37 ,Eastern Asia,Asia,2,3
-Colombia,Upper middle income,4,N2O,21720,0.05%,50883, 0.43 ,Latin America and the Caribbean,Americas,4,2
-Congo,Low income,2,N2O,15790,0.04%,5518, 2.86 ,Sub-Saharan Africa,Africa,11,1
-Egypt,Lower middle income,3,N2O,22320,0.05%,102334, 0.22 ,Northern Africa,Africa,5,1
-Ethiopia,Low income,2,N2O,52160,0.13%,114964, 0.45 ,Sub-Saharan Africa,Africa,11,1
-France,High income,1,N2O,38030,0.09%,65274, 0.58 ,Western Europe,Europe,13,4
-Germany,High income,1,N2O,32900,0.08%,83784, 0.39 ,Western Europe,Europe,13,4
-India,Lower middle income,3,N2O,253790,0.61%,1380004, 0.18 ,Southern Asia,Asia,9,3
-Indonesia,Lower middle income,3,N2O,95690,0.23%,273524, 0.35 ,South-eastern Asia,Asia,8,3
-Iran,Lower middle income,3,N2O,37580,0.09%,83993, 0.45 ,Southern Asia,Asia,9,3
-Italy,High income,1,N2O,17900,0.04%,60462, 0.30 ,Southern Europe,Europe,10,4
-Japan,High income,1,N2O,18010,0.04%,126476, 0.14 ,Eastern Asia,Asia,2,3
-Kenya,Lower middle income,3,N2O,18330,0.04%,53771, 0.34 ,Sub-Saharan Africa,Africa,11,1
-Mali,Low income,2,N2O,13820,0.03%,20251, 0.68 ,Sub-Saharan Africa,Africa,11,1
-Mexico,Upper middle income,4,N2O,42250,0.10%,128933, 0.33 ,Latin America and the Caribbean,Americas,4,2
-Mongolia,Lower middle income,3,N2O,13190,0.03%,3278, 4.02 ,Eastern Asia,Asia,2,3
-Myanmar,Lower middle income,3,N2O,21340,0.05%,54410, 0.39 ,South-eastern Asia,Asia,8,3
-New Zealand,High income,1,N2O,15040,0.04%,4822, 3.12 ,Australia and New Zealand,Oceania,1,5
-Niger,Low income,2,N2O,12250,0.03%,24207, 0.51 ,Sub-Saharan Africa,Africa,11,1
-Nigeria,Lower middle income,3,N2O,37420,0.09%,206140, 0.18 ,Sub-Saharan Africa,Africa,11,1
-Pakistan,Lower middle income,3,N2O,60950,0.15%,220892, 0.28 ,Southern Asia,Asia,9,3
-Philippines,Lower middle income,3,N2O,13640,0.03%,109581, 0.12 ,South-eastern Asia,Asia,8,3
-Poland,High income,1,N2O,21480,0.05%,37847, 0.57 ,Eastern Europe,Europe,3,4
-Russian Federation,Upper middle income,4,N2O,58610,0.14%,145934, 0.40 ,Eastern Europe,Europe,3,4
-South Africa,Upper middle income,4,N2O,18820,0.05%,59309, 0.32 ,Sub-Saharan Africa,Africa,11,1
-South Sudan,Low income,2,N2O,23010,0.06%,11194, 2.06 ,Sub-Saharan Africa,Africa,11,1
-Spain,High income,1,N2O,20350,0.05%,46755, 0.44 ,Southern Europe,Europe,10,4
-Sudan,Low income,2,N2O,29610,0.07%,43849, 0.68 ,Northern Africa,Africa,5,1
-Tanzania,Lower middle income,3,N2O,30340,0.07%,59734, 0.51 ,Sub-Saharan Africa,Africa,11,1
-Thailand,Upper middle income,4,N2O,19950,0.05%,69800, 0.29 ,South-eastern Asia,Asia,8,3
-Turkey,Upper middle income,4,N2O,34380,0.08%,84339, 0.41 ,Western Asia,Asia,12,3
-Uganda,Low income,2,N2O,15460,0.04%,45741, 0.34 ,Sub-Saharan Africa,Africa,11,1
-Ukraine,Lower middle income,3,N2O,25310,0.06%,43734, 0.58 ,Eastern Europe,Europe,3,4
-United Kingdom,High income,1,N2O,28290,0.07%,67886, 0.42 ,Northern Europe,Europe,7,4
-United States,High income,1,N2O,250060,0.60%,331003, 0.76 ,Northern America,Americas,6,2
-Uzbekistan,Lower middle income,3,N2O,16240,0.04%,33469, 0.49 ,Central Asia,Asia,2,3
-Venezuela,Lower middle income,3,N2O,13540,0.03%,28436, 0.48 ,Latin America and the Caribbean,Americas,4,2
-Vietnam,Lower middle income,3,N2O,24080,0.06%,97339, 0.25 ,South-eastern Asia,Asia,8,3
-Zambia,Lower middle income,3,N2O,14460,0.03%,18384, 0.79 ,Sub-Saharan Africa,Africa,11,1
+﻿CountryName,IncomeGroup,incomeGroupCode,IndicatorName,innumber,IndicatorValue,PercIndVal,pop,tonnes_pc,subregion,region,subregion_code,region_code
+China,Upper middle income,4,CO2,1,10313460,24.92%,1439324,7.17,Eastern Asia,Asia,2,3
+United States,High income,1,CO2,1,4981300,12.03%,331003,15.05,Northern America,Americas,6,2
+India,Lower middle income,3,CO2,1,2434520,5.88%,1380004,1.76,Southern Asia,Asia,9,3
+Russian Federation,Upper middle income,4,CO2,1,1607550,3.88%,145934,11.02,Eastern Europe,Europe,3,4
+Japan,High income,1,CO2,1,1106150,2.67%,126476,8.75,Eastern Asia,Asia,2,3
+Germany,High income,1,CO2,1,709540,1.71%,83784,8.47,Western Europe,Europe,13,4
+Korea,High income,1,CO2,1,630870,1.52%,25779,24.47,Eastern Asia,Asia,2,3
+Iran,Lower middle income,3,CO2,1,629290,1.52%,83993,7.49,Southern Asia,Asia,9,3
+Indonesia,Lower middle income,3,CO2,1,583110,1.41%,273524,2.13,South-eastern Asia,Asia,8,3
+Canada,High income,1,CO2,1,574400,1.39%,37742,15.22,Northern America,Americas,6,2
+Saudi Arabia,High income,1,CO2,1,514600,1.24%,34814,14.78,Western Asia,Asia,12,3
+Mexico,Upper middle income,4,CO2,1,472140,1.14%,128933,3.66,Latin America and the Caribbean,Americas,4,2
+South Africa,Upper middle income,4,CO2,1,433250,1.05%,59309,7.31,Sub-Saharan Africa,Africa,11,1
+Brazil,Upper middle income,4,CO2,1,427710,1.03%,212559,2.01,Latin America and the Caribbean,Americas,4,2
+Turkey,Upper middle income,4,CO2,1,412970,1.00%,84339,4.9,Western Asia,Asia,12,3
+Australia,High income,1,CO2,1,386620,0.93%,25500,15.16,Australia and New Zealand,Oceania,1,5
+United Kingdom,High income,1,CO2,1,358800,0.87%,67886,5.29,Northern Europe,Europe,7,4
+Italy,High income,1,CO2,1,324850,0.78%,60462,5.37,Southern Europe,Europe,10,4
+Poland,High income,1,CO2,1,312740,0.76%,37847,8.26,Eastern Europe,Europe,3,4
+France,High income,1,CO2,1,309960,0.75%,65274,4.75,Western Europe,Europe,13,4
+Spain,High income,1,CO2,1,258340,0.62%,46755,5.53,Southern Europe,Europe,10,4
+Thailand,Upper middle income,4,CO2,1,257860,0.62%,69800,3.69,South-eastern Asia,Asia,8,3
+Vietnam,Lower middle income,3,CO2,1,257860,0.62%,97339,2.65,South-eastern Asia,Asia,8,3
+Egypt,Lower middle income,3,CO2,1,246260,0.59%,102334,2.41,Northern Africa,Africa,5,1
+Malaysia,Upper middle income,4,CO2,1,239620,0.58%,32366,7.4,South-eastern Asia,Asia,8,3
+Kazakhstan,Upper middle income,4,CO2,1,220450,0.53%,18777,11.74,Central Asia,Asia,2,3
+Pakistan,Lower middle income,3,CO2,1,208370,0.50%,220892,0.94,Southern Asia,Asia,9,3
+United Arab Emirates,High income,1,CO2,1,200300,0.48%,9890,20.25,Western Asia,Asia,12,3
+Iraq,Upper middle income,4,CO2,1,188140,0.45%,40223,4.68,Western Asia,Asia,12,3
+Ukraine,Lower middle income,3,CO2,1,185370,0.45%,43734,4.24,Eastern Europe,Europe,3,4
+Argentina,Upper middle income,4,CO2,1,177410,0.43%,45196,3.93,Latin America and the Caribbean,Americas,4,2
+Algeria,Lower middle income,3,CO2,1,151670,0.37%,43851,3.46,Northern Africa,Africa,5,1
+Netherlands,High income,1,CO2,1,151170,0.37%,17135,8.82,Western Europe,Europe,13,4
+Philippines,Lower middle income,3,CO2,1,142240,0.34%,109581,1.3,South-eastern Asia,Asia,8,3
+Venezuela,Lower middle income,3,CO2,1,138160,0.33%,28436,4.86,Latin America and the Caribbean,Americas,4,2
+Nigeria,Lower middle income,3,CO2,1,130670,0.32%,206140,0.63,Sub-Saharan Africa,Africa,11,1
+Uzbekistan,Lower middle income,3,CO2,1,112090,0.27%,33469,3.35,Central Asia,Asia,2,3
+Czech,High income,1,CO2,1,102480,0.25%,10709,9.57,Eastern Europe,Europe,3,4
+Belgium,High income,1,CO2,1,93470,0.23%,11590,8.06,Western Europe,Europe,13,4
+Qatar,High income,1,CO2,1,90170,0.22%,2881,31.3,Western Asia,Asia,12,3
+Kuwait,High income,1,CO2,1,89460,0.22%,4271,20.95,Western Asia,Asia,12,3
+Chile,High income,1,CO2,1,86620,0.21%,19116,4.53,Latin America and the Caribbean,Americas,4,2
+Bangladesh,Lower middle income,3,CO2,1,82760,0.20%,164689,0.5,Southern Asia,Asia,9,3
+Colombia,Upper middle income,4,CO2,1,79490,0.19%,50883,1.56,Latin America and the Caribbean,Americas,4,2
+Romania,Upper middle income,4,CO2,1,74880,0.18%,19238,3.89,Eastern Europe,Europe,3,4
+Oman,High income,1,CO2,1,73370,0.18%,5107,14.37,Western Asia,Asia,12,3
+Turkmenistan,Upper middle income,4,CO2,1,71730,0.17%,6031,11.89,Central Asia,Asia,2,3
+Morocco,Lower middle income,3,CO2,1,66680,0.16%,36911,1.81,Northern Africa,Africa,5,1
+Greece,High income,1,CO2,1,65290,0.16%,10423,6.26,Southern Europe,Europe,10,4
+China,Upper middle income,4,N2O,2,538790,1.30%,1439324,0.37,Eastern Asia,Asia,2,3
+India,Lower middle income,3,N2O,2,253790,0.61%,1380004,0.18,Southern Asia,Asia,9,3
+United States,High income,1,N2O,2,250060,0.60%,331003,0.76,Northern America,Americas,6,2
+Brazil,Upper middle income,4,N2O,2,179200,0.43%,212559,0.84,Latin America and the Caribbean,Americas,4,2
+Indonesia,Lower middle income,3,N2O,2,95690,0.23%,273524,0.35,South-eastern Asia,Asia,8,3
+Australia,High income,1,N2O,2,76760,0.19%,25500,3.01,Australia and New Zealand,Oceania,1,5
+Cameroon,Lower middle income,3,N2O,2,62710,0.15%,26546,2.36,Sub-Saharan Africa,Africa,11,1
+Pakistan,Lower middle income,3,N2O,2,60950,0.15%,220892,0.28,Southern Asia,Asia,9,3
+Russian Federation,Upper middle income,4,N2O,2,58610,0.14%,145934,0.4,Eastern Europe,Europe,3,4
+Ethiopia,Low income,2,N2O,2,52160,0.13%,114964,0.45,Sub-Saharan Africa,Africa,11,1
+Argentina,Upper middle income,4,N2O,2,47930,0.12%,45196,1.06,Latin America and the Caribbean,Americas,4,2
+Canada,High income,1,N2O,2,43120,0.10%,37742,1.14,Northern America,Americas,6,2
+Mexico,Upper middle income,4,N2O,2,42250,0.10%,128933,0.33,Latin America and the Caribbean,Americas,4,2
+France,High income,1,N2O,2,38030,0.09%,65274,0.58,Western Europe,Europe,13,4
+Iran,Lower middle income,3,N2O,2,37580,0.09%,83993,0.45,Southern Asia,Asia,9,3
+Nigeria,Lower middle income,3,N2O,2,37420,0.09%,206140,0.18,Sub-Saharan Africa,Africa,11,1
+Turkey,Upper middle income,4,N2O,2,34380,0.08%,84339,0.41,Western Asia,Asia,12,3
+Germany,High income,1,N2O,2,32900,0.08%,83784,0.39,Western Europe,Europe,13,4
+Central African Republic,Low income,2,N2O,2,32110,0.08%,4830,6.65,Sub-Saharan Africa,Africa,11,1
+Tanzania,Lower middle income,3,N2O,2,30340,0.07%,59734,0.51,Sub-Saharan Africa,Africa,11,1
+Sudan,Low income,2,N2O,2,29610,0.07%,43849,0.68,Northern Africa,Africa,5,1
+Bangladesh,Lower middle income,3,N2O,2,29240,0.07%,164689,0.18,Southern Asia,Asia,9,3
+United Kingdom,High income,1,N2O,2,28290,0.07%,67886,0.42,Northern Europe,Europe,7,4
+Ukraine,Lower middle income,3,N2O,2,25310,0.06%,43734,0.58,Eastern Europe,Europe,3,4
+Chad,Low income,2,N2O,2,24920,0.06%,16426,1.52,Sub-Saharan Africa,Africa,11,1
+Vietnam,Lower middle income,3,N2O,2,24080,0.06%,97339,0.25,South-eastern Asia,Asia,8,3
+South Sudan,Low income,2,N2O,2,23010,0.06%,11194,2.06,Sub-Saharan Africa,Africa,11,1
+Egypt,Lower middle income,3,N2O,2,22320,0.05%,102334,0.22,Northern Africa,Africa,5,1
+Colombia,Upper middle income,4,N2O,2,21720,0.05%,50883,0.43,Latin America and the Caribbean,Americas,4,2
+Poland,High income,1,N2O,2,21480,0.05%,37847,0.57,Eastern Europe,Europe,3,4
+Myanmar,Lower middle income,3,N2O,2,21340,0.05%,54410,0.39,South-eastern Asia,Asia,8,3
+Spain,High income,1,N2O,2,20350,0.05%,46755,0.44,Southern Europe,Europe,10,4
+Thailand,Upper middle income,4,N2O,2,19950,0.05%,69800,0.29,South-eastern Asia,Asia,8,3
+South Africa,Upper middle income,4,N2O,2,18820,0.05%,59309,0.32,Sub-Saharan Africa,Africa,11,1
+Kenya,Lower middle income,3,N2O,2,18330,0.04%,53771,0.34,Sub-Saharan Africa,Africa,11,1
+Japan,High income,1,N2O,2,18010,0.04%,126476,0.14,Eastern Asia,Asia,2,3
+Italy,High income,1,N2O,2,17900,0.04%,60462,0.3,Southern Europe,Europe,10,4
+Angola,Lower middle income,3,N2O,2,16440,0.04%,32866,0.5,Sub-Saharan Africa,Africa,11,1
+Uzbekistan,Lower middle income,3,N2O,2,16240,0.04%,33469,0.49,Central Asia,Asia,2,3
+Congo,Low income,2,N2O,2,15790,0.04%,5518,2.86,Sub-Saharan Africa,Africa,11,1
+Uganda,Low income,2,N2O,2,15460,0.04%,45741,0.34,Sub-Saharan Africa,Africa,11,1
+New Zealand,High income,1,N2O,2,15040,0.04%,4822,3.12,Australia and New Zealand,Oceania,1,5
+Zambia,Lower middle income,3,N2O,2,14460,0.03%,18384,0.79,Sub-Saharan Africa,Africa,11,1
+Mali,Low income,2,N2O,2,13820,0.03%,20251,0.68,Sub-Saharan Africa,Africa,11,1
+Philippines,Lower middle income,3,N2O,2,13640,0.03%,109581,0.12,South-eastern Asia,Asia,8,3
+Venezuela,Lower middle income,3,N2O,2,13540,0.03%,28436,0.48,Latin America and the Caribbean,Americas,4,2
+Mongolia,Lower middle income,3,N2O,2,13190,0.03%,3278,4.02,Eastern Asia,Asia,2,3
+Niger,Low income,2,N2O,2,12250,0.03%,24207,0.51,Sub-Saharan Africa,Africa,11,1
+Algeria,Lower middle income,3,N2O,2,12110,0.03%,43851,0.28,Northern Africa,Africa,5,1
+China,Upper middle income,4,CH4,3,1238630,2.99%,1439324,0.86,Eastern Asia,Asia,2,3
+Russian Federation,Upper middle income,4,CH4,3,849570,2.05%,145934,5.82,Eastern Europe,Europe,3,4
+India,Lower middle income,3,CH4,3,666510,1.61%,1380004,0.48,Southern Asia,Asia,9,3
+United States,High income,1,CH4,3,622590,1.50%,331003,1.88,Northern America,Americas,6,2
+Brazil,Upper middle income,4,CH4,3,416280,1.01%,212559,1.96,Latin America and the Caribbean,Americas,4,2
+Indonesia,Lower middle income,3,CH4,3,287500,0.69%,273524,1.05,South-eastern Asia,Asia,8,3
+Pakistan,Lower middle income,3,CH4,3,151020,0.36%,220892,0.68,Southern Asia,Asia,9,3
+Iran,Lower middle income,3,CH4,3,149690,0.36%,83993,1.78,Southern Asia,Asia,9,3
+Mexico,Upper middle income,4,CH4,3,144610,0.35%,128933,1.12,Latin America and the Caribbean,Americas,4,2
+Australia,High income,1,CH4,3,139070,0.34%,25500,5.45,Australia and New Zealand,Oceania,1,5
+Nigeria,Lower middle income,3,CH4,3,127900,0.31%,206140,0.62,Sub-Saharan Africa,Africa,11,1
+Argentina,Upper middle income,4,CH4,3,117850,0.28%,45196,2.61,Latin America and the Caribbean,Americas,4,2
+Uzbekistan,Lower middle income,3,CH4,3,105930,0.26%,33469,3.16,Central Asia,Asia,2,3
+Ethiopia,Low income,2,CH4,3,103110,0.25%,114964,0.9,Sub-Saharan Africa,Africa,11,1
+Canada,High income,1,CH4,3,93980,0.23%,37742,2.49,Northern America,Americas,6,2
+Vietnam,Lower middle income,3,CH4,3,87750,0.21%,97339,0.9,South-eastern Asia,Asia,8,3
+Thailand,Upper middle income,4,CH4,3,84140,0.20%,69800,1.21,South-eastern Asia,Asia,8,3
+Bangladesh,Lower middle income,3,CH4,3,83790,0.20%,164689,0.51,Southern Asia,Asia,9,3
+Afghanistan,Low income,2,CH4,3,81510,0.20%,38928,2.09,Southern Asia,Asia,9,3
+Colombia,Upper middle income,4,CH4,3,76700,0.19%,50883,1.51,Latin America and the Caribbean,Americas,4,2
+Venezuela,Lower middle income,3,CH4,3,72340,0.17%,28436,2.54,Latin America and the Caribbean,Americas,4,2
+Philippines,Lower middle income,3,CH4,3,67660,0.16%,109581,0.62,South-eastern Asia,Asia,8,3
+Myanmar,Lower middle income,3,CH4,3,65790,0.16%,54410,1.21,South-eastern Asia,Asia,8,3
+Ukraine,Lower middle income,3,CH4,3,62950,0.15%,43734,1.44,Eastern Europe,Europe,3,4
+Tanzania,Lower middle income,3,CH4,3,62650,0.15%,59734,1.05,Sub-Saharan Africa,Africa,11,1
+Sudan,Low income,2,CH4,3,58850,0.14%,43849,1.34,Northern Africa,Africa,5,1
+France,High income,1,CH4,3,58340,0.14%,65274,0.89,Western Europe,Europe,13,4
+Egypt,Lower middle income,3,CH4,3,56870,0.14%,102334,0.56,Northern Africa,Africa,5,1
+Chad,Low income,2,CH4,3,53990,0.13%,16426,3.29,Sub-Saharan Africa,Africa,11,1
+Germany,High income,1,CH4,3,53370,0.13%,83784,0.64,Western Europe,Europe,13,4
+United Arab Emirates,High income,1,CH4,3,52960,0.13%,9890,5.35,Western Asia,Asia,12,3
+United Kingdom,High income,1,CH4,3,51210,0.12%,67886,0.75,Northern Europe,Europe,7,4
+Turkmenistan,Upper middle income,4,CH4,3,49580,0.12%,6031,8.22,Central Asia,Asia,2,3
+Algeria,Lower middle income,3,CH4,3,49550,0.12%,43851,1.13,Northern Africa,Africa,5,1
+Poland,High income,1,CH4,3,47540,0.11%,37847,1.26,Eastern Europe,Europe,3,4
+Turkey,Upper middle income,4,CH4,3,47400,0.11%,84339,0.56,Western Asia,Asia,12,3
+Malaysia,Upper middle income,4,CH4,3,46580,0.11%,32366,1.44,South-eastern Asia,Asia,8,3
+South Africa,Upper middle income,4,CH4,3,45140,0.11%,59309,0.76,Sub-Saharan Africa,Africa,11,1
+Saudi Arabia,High income,1,CH4,3,44170,0.11%,34814,1.27,Western Asia,Asia,12,3
+Italy,High income,1,CH4,3,43670,0.11%,60462,0.72,Southern Europe,Europe,10,4
+Azerbaijan,Upper middle income,4,CH4,3,43600,0.11%,10139,4.3,Western Asia,Asia,12,3
+Kazakhstan,Upper middle income,4,CH4,3,41360,0.10%,18777,2.2,Central Asia,Asia,2,3
+Kenya,Lower middle income,3,CH4,3,40250,0.10%,53771,0.75,Sub-Saharan Africa,Africa,11,1
+Spain,High income,1,CH4,3,39940,0.10%,46755,0.85,Southern Europe,Europe,10,4
+Congo,Low income,2,CH4,3,38620,0.09%,5518,7,Sub-Saharan Africa,Africa,11,1
+Libya,Upper middle income,4,CH4,3,37790,0.09%,6871,5.5,Northern Africa,Africa,5,1
+Angola,Lower middle income,3,CH4,3,35520,0.09%,32866,1.08,Sub-Saharan Africa,Africa,11,1
+South Sudan,Low income,2,CH4,3,34170,0.08%,11194,3.05,Sub-Saharan Africa,Africa,11,1
+Uganda,Low income,2,CH4,3,33250,0.08%,45741,0.73,Sub-Saharan Africa,Africa,11,1
