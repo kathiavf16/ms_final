@@ -5,6 +5,7 @@
 import { Gauge} from "./Gauge.js";
 //import { Sunburst} from "./Sunburst.js";
 import {BarTop} from "./BarTop.js";
+import {Bartonnes} from "./Bartonnes.js";
 import {Line} from "./Line.js";
 import {Heatmap} from "./Heatmap.js";
 
@@ -27,6 +28,7 @@ let state = {
   line: null,
   heatmap: null,
   barTop: null,
+  bartonnes: null,
   
 };
 
@@ -35,11 +37,12 @@ Promise.all([
   d3.csv("./data/greenhouse.csv", d3.autoType),
   d3.csv("./data/top.csv", d3.autoType),
  
-]).then(([test, bubble, sunburst, greenhouse, barTop]) => {
+]).then(([test, bubble, sunburst, greenhouse, barTop, bartonnes]) => {
   //state.sunburst = sunburst;
   state.line = line;
   state.greenhouse = greenhouse;
   state.barTop = barTop;
+  state.bartonnes = bartonnes;
   //state.sunburst2 = sunburst2;
   
  
@@ -54,19 +57,21 @@ function init(){
   //sunburst2 = new Sunburst2(state, setGlobalState);
   line = new Line(state, setGlobalState);
   barTop = new BarTop(state, setGlobalState);
+  bartonnes = new Bartonnes(state, setGlobalState);
   
   console.log("table", sunburst);
   draw();
 }
 
 function draw() {
-  console.log("test", sunburst, gauge, sunburst2, line, barTop);
+  console.log("test", sunburst, gauge, sunburst2, line, barTop, bartonnes);
   //sunburst.draw(state, setGlobalState);
   heatmap.draw(state, setGlobalState);
   //gauge.draw(state, setGlobalState);
   //sunburst2.draw(state, setGlobalState);
   line.draw(state, setGlobalState);
   barTop.draw(state, setGlobalState);
+  bartonnes.draw(state, setGlobalState);
     
 }
 

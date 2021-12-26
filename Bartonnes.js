@@ -1,4 +1,4 @@
-class BarTop{
+class Bartonnes{
 
     constructor(state, setGlobalState) {
 
@@ -22,7 +22,7 @@ const svg = d3.select("#bartop")
     .attr("transform", `translate(${margin.left},${margin.top})`);
 
 // Parse the Data
-d3.csv("https://raw.githubusercontent.com/kathiavf16/ms_final/main/data/top_in.csv").then(function (data) {
+d3.csv("https://raw.githubusercontent.com/kathiavf16/ms_final/main/data/top_tonnes.csv").then(function (data) {
 
     // X axis
     const x = d3.scaleBand()
@@ -38,7 +38,7 @@ d3.csv("https://raw.githubusercontent.com/kathiavf16/ms_final/main/data/top_in.c
 
     // Add Y axis
     const y = d3.scaleLinear()
-        .domain([0, 10313460])
+        .domain([0, 40])
         .range([height, 0]);
     svg.append("g")
         .call(d3.axisLeft(y));
@@ -58,8 +58,8 @@ d3.csv("https://raw.githubusercontent.com/kathiavf16/ms_final/main/data/top_in.c
     svg.selectAll("rect")
         .transition()
         .duration(800)
-        .attr("y", d => y(d.IndicatorValue))
-        .attr("height", d => height - y(d.IndicatorValue))
+        .attr("y", d => y(d.tonnes_pc))
+        .attr("height", d => height - y(d.tonnes_pc))
         .delay((d, i) => {
             console.log(i);
             return i * 100
@@ -75,5 +75,5 @@ d3.csv("https://raw.githubusercontent.com/kathiavf16/ms_final/main/data/top_in.c
 }
 
 export {
-    BarTop
+    Bartonnes
 };
