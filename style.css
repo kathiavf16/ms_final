@@ -25,7 +25,7 @@ li {
 }
 
 .container {
-    max-width: 50%;
+    max-width: 55%;
     text-align: left;
     margin-top: 48px;
     position:absolute;
@@ -42,7 +42,7 @@ li {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(176, 224, 214);
+  background-color: rgb(105, 118, 150);
   overflow-x: hidden;
   padding-top: 20px;
 }
@@ -51,7 +51,7 @@ li {
   padding: 6px 18px 6px 18px;
   text-decoration: none;
   font-size: 1em;
-  color: #0e0d0d;
+  color: #ffffff;
   display: block;
   font-family: 'Mulish', sans-serif;
   align-content: center;
@@ -59,7 +59,7 @@ li {
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #292626;
 }
 
 .sidenav p,  h3 {
@@ -112,4 +112,8 @@ font-size: 1em;
   background-color: rgb(255, 255, 255);
   align-content: center;
 
+}
+.wrapper {
+  max-width: 80%;
+  align-content: center;
 }
