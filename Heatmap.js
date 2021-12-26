@@ -22,7 +22,7 @@ const svg = d3.select("#heatmap")
     .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
 //Read the data
-d3.csv("https://raw.githubusercontent.com/kathiavf16/ms_final/main/data/greenhouse.csv").then(function (data) {
+d3.csv("https://raw.githubusercontent.com/kathiavf16/ms_final/main/data/greenhouse2.csv").then(function (data) {
 
     // Labels of row and columns -> unique identifier of the column called 'group' and 'variable'
     const myGroups = Array.from(new Set(data.map(d => d.IndicatorName)))
@@ -54,7 +54,7 @@ d3.csv("https://raw.githubusercontent.com/kathiavf16/ms_final/main/data/greenhou
     // Build color scale
     const myColor = d3.scaleSequential()
         .interpolator(d3.interpolatePuBuGn)
-        .domain([0, 32.0])
+        .domain([50000,100000, 300000,700000, 1100000, 20000000])
 
     // create a tooltip
     const tooltip = d3.select("#heatmap")
@@ -77,7 +77,7 @@ d3.csv("https://raw.githubusercontent.com/kathiavf16/ms_final/main/data/greenhou
     }
     const mousemove = function (event, d) {
         tooltip
-            .html("The exact value of<br>this cell is: " + d.tonnes_pc)
+            .html("The exact value of<br>this cell is: " + d.IndicatorValue)
             .style("left", (event.x) / 2 + "px")
             .style("top", (event.y) / 2 + "px")
     }
@@ -85,8 +85,8 @@ d3.csv("https://raw.githubusercontent.com/kathiavf16/ms_final/main/data/greenhou
         tooltip
             .style("opacity", 0)
         d3.select(this)
-            .style("stroke", "none")
-            .style("opacity", 0.8)
+            //.style("stroke", "none")
+           // .style("opacity", 0.8)
     }
 
     // add the squares
@@ -106,14 +106,14 @@ d3.csv("https://raw.githubusercontent.com/kathiavf16/ms_final/main/data/greenhou
         .attr("width", x.bandwidth())
         .attr("height", y.bandwidth())
         .style("fill", function (d) {
-            return myColor(d.tonnes_pc)
+            return myColor(d.IndicatorValue)
         })
         .style("stroke-width", 1)
         .style("stroke", "black")
         .style("opacity", 0.8)
-        //.on("mouseover", mouseover)
-        //.on("mousemove", mousemove)
-        //.on("mouseleave", mouseleave)
+        .on("mouseover", mouseover)
+        .on("mousemove", mousemove)
+        .on("mouseleave", mouseleave)
 })
 
 // Add title to graph
