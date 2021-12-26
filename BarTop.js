@@ -10,8 +10,8 @@ const margin = {
         bottom: 90,
         left: 40
     },
-    width = 460 - margin.left - margin.right,
-    height = 450 - margin.top - margin.bottom;
+    width = 260 - margin.left - margin.right,
+    height = 350 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
 const svg = d3.select("#bartop")
@@ -22,12 +22,12 @@ const svg = d3.select("#bartop")
     .attr("transform", `translate(${margin.left},${margin.top})`);
 
 // Parse the Data
-d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/7_OneCatOneNum_header.csv").then(function (data) {
+d3.csv("https://raw.githubusercontent.com/kathiavf16/ms_final/main/data/top_in.csv").then(function (data) {
 
     // X axis
     const x = d3.scaleBand()
         .range([0, width])
-        .domain(data.map(d => d.Country))
+        .domain(data.map(d => d.CountryName))
         .padding(0.2);
     svg.append("g")
         .attr("transform", `translate(0,${height})`)
@@ -38,7 +38,7 @@ d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_data
 
     // Add Y axis
     const y = d3.scaleLinear()
-        .domain([0, 13000])
+        .domain([574400, 10313460])
         .range([height, 0]);
     svg.append("g")
         .call(d3.axisLeft(y));
@@ -47,7 +47,7 @@ d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_data
     svg.selectAll("mybar")
         .data(data)
         .join("rect")
-        .attr("x", d => x(d.Country))
+        .attr("x", d => x(d.CountryName))
         .attr("width", x.bandwidth())
         .attr("fill", "#69b3a2")
         // no bar at the beginning thus:
@@ -58,8 +58,8 @@ d3.csv("https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_data
     svg.selectAll("rect")
         .transition()
         .duration(800)
-        .attr("y", d => y(d.Value))
-        .attr("height", d => height - y(d.Value))
+        .attr("y", d => y(d.IndicatorValue))
+        .attr("height", d => height - y(d.IndicatorValue))
         .delay((d, i) => {
             console.log(i);
             return i * 100
