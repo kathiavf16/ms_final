@@ -6,11 +6,11 @@ class BarTop{
 // set the dimensions and margins of the graph
 const margin = {
         top: 10,
-        right: 30,
+        right: 20,
         bottom: 90,
         left: 40
     },
-    width = 260 - margin.left - margin.right,
+    width = 360 - margin.left - margin.right,
     height = 350 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
@@ -38,7 +38,7 @@ d3.csv("https://raw.githubusercontent.com/kathiavf16/ms_final/main/data/top_in.c
 
     // Add Y axis
     const y = d3.scaleLinear()
-        .domain([0, 10313460])
+        .domain([0, 12])
         .range([height, 0]);
     svg.append("g")
         .call(d3.axisLeft(y));
@@ -54,6 +54,7 @@ d3.csv("https://raw.githubusercontent.com/kathiavf16/ms_final/main/data/top_in.c
         .attr("height", d => height - y(0)) // always equal to 0
         .attr("y", d => y(0))
 
+
     // Animation
     svg.selectAll("rect")
         .transition()
@@ -64,6 +65,8 @@ d3.csv("https://raw.githubusercontent.com/kathiavf16/ms_final/main/data/top_in.c
             console.log(i);
             return i * 100
         })
+
+    
 
 })
 
