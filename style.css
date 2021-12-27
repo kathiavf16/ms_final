@@ -25,7 +25,7 @@ li {
 }
 
 .container {
-    max-width: 55%;
+    max-width: 60%;
     text-align: left;
     margin-top: 48px;
     position:absolute;
@@ -42,10 +42,11 @@ li {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(105, 118, 150);
+  background-color: rgb(42, 44, 50);
   overflow-x: hidden;
   padding-top: 20px;
   color: #ffffff;
+  
 }
 
 .sidenav a {
@@ -56,7 +57,7 @@ li {
   display: block;
   font-family: 'Mulish', sans-serif;
   align-content: center;
-  font-weight: bolder;
+  font-weight:400;
 }
 
 .sidenav a:hover {
@@ -87,6 +88,10 @@ font-size: 1em;
   position: fixed;
   width: 87%;
   z-index:999;
+  background-image: url("/img/font1.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
   
 }
 
@@ -115,6 +120,6 @@ font-size: 1em;
 
 }
 .wrapper {
-  max-width: 80%;
+  max-width: 95%;
   align-content: center;
 }
