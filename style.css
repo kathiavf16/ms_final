@@ -42,10 +42,15 @@ li {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: rgb(42, 44, 50);
+  background-color: rgb(255, 255, 255);
   overflow-x: hidden;
   padding-top: 20px;
   color: #ffffff;
+  border-width: medium;
+  border-color: #bd8816;
+  border-right-style: solid;
+  z-index:999;
+  padding-right: 10px;
   
 }
 
@@ -53,7 +58,7 @@ li {
   padding: 6px 18px 6px 18px;
   text-decoration: none;
   font-size: 1em;
-  color: #ffffff;
+  color: #bd8816;
   display: block;
   font-family: 'Mulish', sans-serif;
   align-content: center;
@@ -67,6 +72,7 @@ li {
 .sidenav p,  h3 {
 padding: 6px 10px 6px 18px;
 font-size: 1em;
+color: #292626;
 }
 
 .main {
@@ -96,7 +102,7 @@ font-size: 1em;
 }
 
 .topnav p{
-  color: #000000;
+  color: #453108;
   text-align: left;
   padding: 0px 9%;
   font-family: 'DM Serif Display', serif;
