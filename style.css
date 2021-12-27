@@ -9,10 +9,12 @@ p {
 }
 h2 {
    font-weight: 800;
-   text-align: center;
-   font-family: 'Mulish', sans-serif;
+   text-align: left;
+   font-family: 'Raleway', sans-serif;
 }
-
+ h1 {
+   
+ }
 
 .h3-body {
   font-size: 1.1em;
@@ -55,7 +57,7 @@ li {
 }
 
 .sidenav a {
-  padding: 6px 18px 6px 18px;
+  padding: 6px 25px 6px 18px;
   text-decoration: none;
   font-size: 1em;
   color: #bd8816;
@@ -98,14 +100,13 @@ color: #292626;
   background-repeat: no-repeat;
   background-size: cover;
 
-  
 }
 
 .topnav p{
   color: #453108;
   text-align: left;
   padding: 0px 9%;
-  font-family: 'DM Serif Display', serif;
+  font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 1.5em;
   background-color: #ddd;
   
