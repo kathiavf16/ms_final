@@ -96,11 +96,12 @@ font-size: 1em;
 }
 
 .topnav p{
-  color: #f2f2f2;
+  color: #000000;
   text-align: left;
   padding: 0px 9%;
   font-family: 'DM Serif Display', serif;
   font-size: 1.5em;
+  background-color: #ddd;
   
 }
 
