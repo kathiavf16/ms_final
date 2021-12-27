@@ -1,5 +1,5 @@
 body {
-  font-family: 'Mulish', sans-serif;
+  font-family: 'Raleway', sans-serif;
   margin: 0;
  
 }
@@ -88,7 +88,7 @@ font-size: 1em;
   position: fixed;
   width: 87%;
   z-index:999;
-  background-image: url("/img/font1.jpeg");
+  background-image: url("img/font1.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -120,6 +120,6 @@ font-size: 1em;
 
 }
 .wrapper {
-  max-width: 95%;
+  max-width: 80%;
   align-content: center;
 }
