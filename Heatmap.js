@@ -54,7 +54,7 @@ d3.csv("https://raw.githubusercontent.com/kathiavf16/ms_final/main/data/greenhou
     // Build color scale
     const myColor = d3.scaleSequential()
         .interpolator(d3.interpolatePuBuGn)
-        .domain([50000,100000,200000, 500000, 900000,5000000, 7000000, 120000000])
+        .domain([50000,100000,200000, 500000, 900000,1000000, 2000000,3000000,4000000, 5000000,120000000])
 
     // create a tooltip
     const tooltip = d3.select("#heatmap")
