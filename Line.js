@@ -21,7 +21,13 @@ class Line {
            .attr("transform", `translate(${margin.left},${margin.top})`);
 
        //Read the data
-       d3.csv("https://raw.githubusercontent.com/kathiavf16/ms_final/main/data/line.csv").then(function (data) {
+       d3.csv("https://raw.githubusercontent.com/kathiavf16/ms_final/main/data/line.csv", function (d) {
+               return {
+                   year: d3.timeParse("%Y-%m-%d")(d.year),
+                   mean: d.mean,
+                   name: d.name
+               }
+           }, ).then(function (data) {
 
            // group the data: I want to draw one line per group
            const sumstat = d3.group(data, d => d.name); // snest function allows to group the calculation per level of a factor
@@ -35,7 +41,6 @@ class Line {
            svg.append("g")
                .attr("transform", `translate(0, ${height})`)
                .call(d3.axisBottom(x).ticks(6));
-               
 
            // Add Y axis
            const y = d3.scaleLinear()
