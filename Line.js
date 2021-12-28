@@ -34,11 +34,12 @@ class Line {
                .range([0, width]);
            svg.append("g")
                .attr("transform", `translate(0, ${height})`)
-               .call(d3.axisBottom(x).ticks(5));
+               .call(d3.axisBottom(x).ticks(6));
+               
 
            // Add Y axis
            const y = d3.scaleLinear()
-               .domain([-1000, d3.max(data, function (d) {
+               .domain([0, d3.max(data, function (d) {
                    return +d.mean;
                })])
                .range([height, 0]);
