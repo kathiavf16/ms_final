@@ -81,6 +81,7 @@ color: #292626;
   margin-left: 20%; /* Same as the width of the sidenav */
   font-size: 0.9em; /* Increased text to enable scrolling */
   padding: 0px 10px;
+  margin-right: 11%;
 }
 
 @media screen and (max-height: 450px) {
@@ -99,6 +100,8 @@ color: #292626;
   background-image: url("img/font1.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
+  border-bottom: solid; 
+  border-color: #bd8816;
 
 }
 
@@ -109,6 +112,7 @@ color: #292626;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 1.5em;
   background-color: #ddd;
+  width: fit-content;
   
 }
 
@@ -128,6 +132,6 @@ color: #292626;
 
 }
 .wrapper {
-  max-width: 80%;
+  max-width: 100%;
   align-content: center;
 }
