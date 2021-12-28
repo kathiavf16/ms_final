@@ -21,7 +21,7 @@ class Line {
            .attr("transform", `translate(${margin.left},${margin.top})`);
 
        //Read the data
-       d3.csv("https://raw.githubusercontent.com/kathiavf16/ms_final/main/data/line2.csv").then(function (data) {
+       d3.csv("https://raw.githubusercontent.com/kathiavf16/ms_final/main/data/line.csv").then(function (data) {
 
            // group the data: I want to draw one line per group
            const sumstat = d3.group(data, d => d.Name); // snest function allows to group the calculation per level of a factor
