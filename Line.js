@@ -33,7 +33,7 @@ class Line {
            const sumstat = d3.group(data, d => d.name); // snest function allows to group the calculation per level of a factor
            console.log("sum", sumstat);
            // Add X axis --> it is a date format
-           const x = d3.scaleTime()
+           const x = d3.scaleLinear()
                .domain(d3.extent(data, function (d) {
                    return d.year;
                }))
