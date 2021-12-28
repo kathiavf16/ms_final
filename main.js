@@ -28,7 +28,6 @@ let state = {
   line: null,
   heatmap: null,
   barTop: null,
-  bartonnes: null,
   
 };
 
@@ -37,12 +36,12 @@ Promise.all([
   d3.csv("./data/greenhouse.csv", d3.autoType),
   d3.csv("./data/top.csv", d3.autoType),
  
-]).then(([test, bubble, sunburst, greenhouse, barTop, bartonnes]) => {
+]).then(([test, bubble, sunburst, greenhouse, barTop]) => {
   //state.sunburst = sunburst;
   state.line = line;
   state.greenhouse = greenhouse;
   state.barTop = barTop;
-  state.bartonnes = bartonnes;
+  //state.bartonnes = bartonnes;
   //state.sunburst2 = sunburst2;
   
  
