@@ -45,7 +45,7 @@ class Line {
            // Add Y axis
            const y = d3.scaleLinear()
                .domain([0, d3.max(data, function (d) {
-                   return d.mean;
+                   return +d.mean;
                })])
                .range([height, 0]);
            svg.append("g")
@@ -70,6 +70,7 @@ class Line {
                            return x(d.year);
                        })
                        .y(function (d) {
+                           console.log(+d.mean)
                            return y(+d.mean);
                        })
                        (d[1])
