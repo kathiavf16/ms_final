@@ -70,7 +70,7 @@ class Line {
                            return x(d.year);
                        })
                        .y(function (d) {
-                           return y(d.mean);
+                           return y(+d.mean);
                        })
                        (d[1])
                })
