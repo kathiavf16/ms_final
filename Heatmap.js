@@ -77,7 +77,7 @@ d3.csv("data/greenhouse2.csv").then(function (data) {
     }
     const mousemove = function (event, d) {
         tooltip
-            .html("The exact value of<br>this cell is: " + d.IndicatorValue)
+            .html( d.IndicatorValue + "The exact value of<br>this cell is: " + d.IndicatorValue)
             .style("left", (event.x) / 2 + "px")
             .style("top", (event.y) / 2 + "px")
     }
@@ -85,8 +85,8 @@ d3.csv("data/greenhouse2.csv").then(function (data) {
         tooltip
             .style("opacity", 0)
         d3.select(this)
-            //.style("stroke", "none")
-           // .style("opacity", 0.8)
+            .style("stroke", "none")
+            .style("opacity", 0.8)
     }
 
     // add the squares
@@ -122,7 +122,7 @@ svg.append("text")
     .attr("y", -50)
     .attr("text-anchor", "left")
     .style("font-size", "22px")
-    .text("A d3.js heatmap");
+    .text("Greenhouse Gas Emissions (CO2, N2O, & CH4)");
 
 // Add subtitle to graph
 svg.append("text")
@@ -132,7 +132,7 @@ svg.append("text")
     .style("font-size", "14px")
     .style("fill", "grey")
     .style("max-width", 400)
-    .text("A short description of the take-away message of this chart.");
+    .text("Total # of emissions by country");
     } //end of constructor
 
     draw(state, setGlobalState) {
