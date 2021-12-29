@@ -21,7 +21,8 @@ class Line {
            .attr("transform", `translate(${margin.left},${margin.top})`);
 
        //Read the data
-       d3.csv("https://raw.githubusercontent.com/kathiavf16/ms_final/main/data/line.csv", function (d) {
+       d3.csv("data/line.csv", function (d) {
+
                return {
                    year: d3.timeParse("%Y-%m-%d")(d.year),
                    mean: d.mean,
@@ -63,7 +64,7 @@ class Line {
                .attr("stroke", function (d) {
                    return color(d[0])
                })
-               .attr("stroke-width", 1.5)
+               .attr("stroke-width", 3)
                .attr("d", function (d) {
                    return d3.line()
                        .x(function (d) {

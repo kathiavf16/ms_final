@@ -22,7 +22,7 @@ const svg = d3.select("#heatmap")
     .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
 //Read the data
-d3.csv("https://raw.githubusercontent.com/kathiavf16/ms_final/main/data/greenhouse2.csv").then(function (data) {
+d3.csv("data/greenhouse2.csv").then(function (data) {
 
     // Labels of row and columns -> unique identifier of the column called 'group' and 'variable'
     const myGroups = Array.from(new Set(data.map(d => d.IndicatorName)))

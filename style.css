@@ -130,8 +130,13 @@ color: #292626;
   background-color: rgb(255, 255, 255);
   align-content: center;
 
+
 }
 .wrapper {
   max-width: 100%;
   align-content: center;
 }
+ .subtitle{
+    font-size: 1em;
+    font-weight: bold;
+ }
