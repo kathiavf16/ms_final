@@ -5,19 +5,22 @@ class Heatmap {
         // Code goes here
 // set the dimensions and margins of the graph
 const margin = {
-        top: 80,
+        top: 40,
         right: 25,
         bottom: 30,
-        left: 160
+        left: 400
     },
-    width = 650 - margin.left - margin.right,
-    height = 900 - margin.top - margin.bottom;
+    width = 3550 - margin.left - margin.right,
+    height = 4500 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
 const svg = d3.select("#heatmap")
     .append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
+    .attr("preserveAspectRatio", "xMinYMin meet")
+        .attr("viewBox", "0 0 3550 4500")
+        .classed("svg-content", true)
+    .attr("width", width)
+    .attr("height", height)
     .append("g")
     .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
@@ -34,7 +37,7 @@ d3.csv("data/greenhouse2.csv").then(function (data) {
         .domain(myGroups)
         .padding(0.05);
     svg.append("g")
-        .style("font-size", 15)
+        .style("font-size", 60)
         .style("color", "black")
         .attr("transform", `translate(0, ${height})`)
         .call(d3.axisBottom(x).tickSize(0))
@@ -44,9 +47,9 @@ d3.csv("data/greenhouse2.csv").then(function (data) {
     const y = d3.scaleBand()
         .range([height, 0])
         .domain(myVars)
-        .padding(0.05);
+        .padding(0.10);
     svg.append("g")
-        .style("font-size", 10)
+        .style("font-size", 60)
         .style("color", "black")
         .call(d3.axisLeft(y).tickSize(0))
         .select(".domain").remove()
@@ -85,7 +88,7 @@ d3.csv("data/greenhouse2.csv").then(function (data) {
         tooltip
             .style("opacity", 0)
         d3.select(this)
-            .style("stroke", "none")
+            .style("stroke", "solid")
             .style("opacity", 0.8)
     }
 
@@ -121,7 +124,7 @@ svg.append("text")
     .attr("x", 0)
     .attr("y", -50)
     .attr("text-anchor", "left")
-    .style("font-size", "22px")
+    .style("font-size", "50px")
     .text("Greenhouse Gas Emissions (CO2, N2O, & CH4)");
 
 // Add subtitle to graph
@@ -129,9 +132,9 @@ svg.append("text")
     .attr("x", 0)
     .attr("y", -20)
     .attr("text-anchor", "left")
-    .style("font-size", "14px")
+    .style("font-size", "50px")
     .style("fill", "grey")
-    .style("max-width", 400)
+    .style("max-width", 1400)
     .text("Total # of emissions by country");
     } //end of constructor
 

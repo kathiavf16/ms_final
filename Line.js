@@ -15,10 +15,14 @@ class Line {
        // append the svg object to the body of the page
        const svg = d3.select("#line")
            .append("svg")
+           .attr("preserveAspectRatio", "xMinYMin meet")
+               .attr("viewBox", "0 0 660 400")
+               .classed("svg-content", true)
            .attr("width", width + margin.left + margin.right)
            .attr("height", height + margin.top + margin.bottom)
            .append("g")
            .attr("transform", `translate(${margin.left},${margin.top})`);
+
 
        //Read the data
        d3.csv("data/line.csv", function (d) {
@@ -77,7 +81,19 @@ class Line {
                        (d[1])
                })
 
+                
+
        })
+
+
+           
+            
+
+
+
+
+
+       
     } //end of constructor
 
     draw(state, setGlobalState) {

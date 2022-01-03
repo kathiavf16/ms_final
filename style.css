@@ -130,8 +130,9 @@ color: #292626;
   background-color: rgb(255, 255, 255);
   align-content: center;
 
-
 }
+
+
 .wrapper {
   max-width: 100%;
   align-content: center;
@@ -142,5 +143,24 @@ color: #292626;
  }
 
  .tooltip {
-
+   position: absolute;
  }
+
+ .svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 100%;
+    vertical-align: top;
+    overflow: hidden;
+    align-content: center;
+}
+.svg-content {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
