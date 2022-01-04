@@ -10,13 +10,13 @@ class Line {
                left: 60
            },
            width = 660 - margin.left - margin.right,
-           height = 500 - margin.top - margin.bottom;
+           height = 600 - margin.top - margin.bottom;
 
        // append the svg object to the body of the page
        const svg = d3.select("#line")
            .append("svg")
            .attr("preserveAspectRatio", "xMinYMin meet")
-               .attr("viewBox", "0 0 660 500")
+               .attr("viewBox", "0 0 660 600")
                .classed("svg-content", true)
            .attr("width", width + margin.left + margin.right)
            .attr("height", height + margin.top + margin.bottom)

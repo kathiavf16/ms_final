@@ -156,18 +156,6 @@ color: #292626;
     align-content: center;
     border-style: ridge;
     border-width: thin;
-   
-   
-  
-    
-}
-.svg-content {
-    display: inline-block;
-    position: absolute;
-    top: 80;
-    bottom: 50;
-    height: 100%;
-    max-width: 100%;
     
 }
 
@@ -183,5 +171,24 @@ color: #292626;
     padding: 3%;
     max-width: 90%;
     border-width: thin;
+    
+}
+
+.svg-content {
+    display: inline-block;
+    position: absolute;
+    top: 80;
+    bottom: 50;
+    height: 100%;
+    max-width: 100%;
+    
+}
+.svg-content-line {
+    display: inline-block;
+    position: absolute;
+    top: 80;
+    bottom: 50;
+    height: 100%;
+    max-width: 100%;
     
 }

@@ -119,14 +119,14 @@ d3.csv("data/greenhouse2.csv").then(function (data) {
         .on("mouseleave", mouseleave)
 })
 
-// Add title to graph
+/* // Add title to graph
 svg.append("text")
     .attr("x", 0)
     .attr("y", -80)
     .attr("text-anchor", "left")
     .style("font-size", "50px")
     .text("Greenhouse Gas Emissions (CO2, N2O, & CH4)");
-
+ */
 // Add subtitle to graph
 /* svg.append("text")
     .attr("x", 100)
