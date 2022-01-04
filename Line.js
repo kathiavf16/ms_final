@@ -23,6 +23,50 @@ class Line {
            .append("g")
            .attr("transform", `translate(${margin.left},${margin.top})`);
 
+           // select the svg area
+
+           // create a list of keys
+           var keys = ["CO2", "CH4", "N2O", "PM2.5"]
+
+           // Usually you have a color scale in your chart already
+           var color = d3.scaleOrdinal()
+               .domain(keys)
+               .range(d3.schemeSet1);
+
+           // Add one dot in the legend for each name.
+           var size = 20
+           svg.selectAll("mydots")
+               .data(keys)
+               .enter()
+               .append("rect")
+               .attr("x", 10)
+               .attr("y", function (d, i) {
+                   return 0 + i * (size + 5)
+               }) // 100 is where the first dot appears. 25 is the distance between dots
+               .attr("width", size)
+               .attr("height", size)
+               .style("fill", function (d) {
+                   return color(d)
+               })
+
+           // Add one dot in the legend for each name.
+           svg.selectAll("mylabels")
+               .data(keys)
+               .enter()
+               .append("text")
+               .attr("x", 10 + size * 1.2)
+               .attr("y", function (d, i) {
+                   return 0 + i * (size + 5) + (size / 2)
+               }) // 100 is where the first dot appears. 25 is the distance between dots
+               .style("fill", function (d) {
+                   return color(d)
+               })
+               .text(function (d) {
+                   return d
+               })
+               .attr("text-anchor", "left")
+               .style("alignment-baseline", "middle")
+
 
        //Read the data
        d3.csv("data/line.csv", function (d) {
@@ -115,6 +159,8 @@ class Line {
                        .style("stroke", "solid")
                        .style("opacity", 0.8)
                }
+
+               
 
        })
 
