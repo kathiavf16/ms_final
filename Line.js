@@ -4,7 +4,7 @@ class Line {
 
         // Code goes here
        const margin = {
-               top: 20,
+               top: 100,
                right: 30,
                bottom: 0,
                left: 60
@@ -58,7 +58,7 @@ class Line {
 
            // color palette
            const color = d3.scaleOrdinal()
-               .range(['#e41a1c', '#377eb8', '#4daf4a', '#984ea3', '#ff7f00', '#ffff33', '#a65628', '#f781bf', '#999999'])
+               .range(['#377eb8','#e41a1c', '#4daf4a', '#984ea3'])
 
            // Draw the line
            svg.selectAll(".line")
