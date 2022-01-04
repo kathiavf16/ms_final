@@ -37,7 +37,7 @@ d3.csv("data/greenhouse2.csv").then(function (data) {
         .domain(myGroups)
         .padding(0.05);
     svg.append("g")
-        .style("font-size", 60)
+        .style("font-size", 70)
         .style("color", "black")
         .attr("transform", `translate(0, ${height})`)
         .call(d3.axisBottom(x).tickSize(0))
@@ -47,9 +47,9 @@ d3.csv("data/greenhouse2.csv").then(function (data) {
     const y = d3.scaleBand()
         .range([height, 0])
         .domain(myVars)
-        .padding(0.10);
+        .padding(0.40);
     svg.append("g")
-        .style("font-size", 60)
+        .style("font-size", 70)
         .style("color", "black")
         .call(d3.axisLeft(y).tickSize(0))
         .select(".domain").remove()
@@ -122,20 +122,20 @@ d3.csv("data/greenhouse2.csv").then(function (data) {
 // Add title to graph
 svg.append("text")
     .attr("x", 0)
-    .attr("y", -70)
+    .attr("y", -80)
     .attr("text-anchor", "left")
     .style("font-size", "50px")
     .text("Greenhouse Gas Emissions (CO2, N2O, & CH4)");
 
 // Add subtitle to graph
-svg.append("text")
-    .attr("x", 0)
+/* svg.append("text")
+    .attr("x", 100)
     .attr("y", 20)
     .attr("text-anchor", "left")
     .style("font-size", "50px")
     .style("fill", "grey")
     .style("max-width", 1400)
-    .text("Total # of emissions by country");
+    .text("Total # of emissions by country"); */
     } //end of constructor
 
     draw(state, setGlobalState) {
