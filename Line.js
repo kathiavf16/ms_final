@@ -121,31 +121,13 @@ class Line {
                        .y(function (d) {
                            console.log(+d.mean)
                            return y(+d.mean);
-                       })
+                       }).curve(d3.curveBasis)
                        (d[1])
                })
+               
 
 
 
-                // add a path element using the line function
-                let pathD = path
-                    .append('path')
-                    .attr('d', line(data))
-                    .attr('fill', 'none')
-                    .attr('stroke', '#f5842e')
-                    .attr('stroke-width', '3');
-
-                // add a animation.
-                const pathNode = pathD.node();
-                const pathLength = pathNode.getTotalLength();
-                const transitionPath = d3
-                    .transition()
-                    .duration(2500);
-                pathD
-                    .attr("stroke-dashoffset", pathLength)
-                    .attr("stroke-dasharray", pathLength)
-                    .transition(transitionPath)
-                    .attr("stroke-dashoffset", 0);
                
 
        })

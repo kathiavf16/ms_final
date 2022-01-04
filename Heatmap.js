@@ -64,11 +64,12 @@ d3.csv("data/greenhouse2.csv").then(function (data) {
         .append("div")
         .style("opacity", 0)
         .attr("class", "tooltip")
-        .style("background-color", "white")
+        .style("background-color", "black")
+        .style("color", "orange")
         .style("border", "solid")
         .style("border-width", "2px")
         .style("border-radius", "5px")
-        .style("padding", "5px")
+        .style("padding", "20px")
 
     // Three function that change the tooltip when user hover / move / leave a cell
     const mouseover = function (event, d) {
@@ -78,9 +79,10 @@ d3.csv("data/greenhouse2.csv").then(function (data) {
             .style("stroke", "black")
             .style("opacity", 1)
     }
+    const formater = d3.format(",.2r");
     const mousemove = function (event, d) {
         tooltip
-            .html( d.CountryName + " emitted " + d.IndicatorValue + " tonnes of " + d.IndicatorName + " in 2018")
+            .html( d.CountryName + " emitted " + formater(d.IndicatorValue) + " tonnes of " + d.IndicatorName + " in 2018")
             .style("left", (event.x) / 2 + "px")
             .style("top", (event.y) / 2 + "px")
     }

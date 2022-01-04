@@ -143,6 +143,7 @@ color: #292626;
 
  .tooltip {
    position: absolute;
+   background-color: black;
  }
 
  .svg-container {
