@@ -30,7 +30,7 @@ function init(){
   heatmap = new Heatmap(state, setGlobalState);
   line = new Line(state, setGlobalState);
   
-  console.log("table", sunburst);
+  console.log("table", line)
   draw();
 }
 
