@@ -155,7 +155,7 @@ color: #292626;
     vertical-align: top;
     overflow: hidden;
     align-content: center;
-    background-color: rgb(246, 246, 246);
+    
 }
 .svg-content {
     display: inline-block;
@@ -163,7 +163,7 @@ color: #292626;
     top: 0;
     left: 0;
     height: 100%;
-    max-width: 95%;
+    max-width: 100%;
     background-color: rgb(246, 246, 246);
     align-content: center;
 }

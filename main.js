@@ -15,14 +15,11 @@ let state = {
 };
 
 Promise.all([
-  d3.csv("./data/sunburst.csv", d3.autoType),
   d3.csv("./data/greenhouse.csv", d3.autoType),
-  d3.csv("./data/top.csv", d3.autoType),
  
-]).then(([test, bubble, sunburst, greenhouse, barTop]) => {
-  state.line = line;
+]).then(([ greenhouse]) => {
+  
   state.greenhouse = greenhouse;
-  state.barTop = barTop;
   
  
    console.log("state: ", state);
