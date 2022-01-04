@@ -80,7 +80,7 @@ d3.csv("data/greenhouse2.csv").then(function (data) {
     }
     const mousemove = function (event, d) {
         tooltip
-            .html( d.IndicatorValue + "The exact value of<br>this cell is: " + d.IndicatorValue)
+            .html( d.CountryName + " emitted " + d.IndicatorValue + " tonnes of " + d.IndicatorName + " in 2018")
             .style("left", (event.x) / 2 + "px")
             .style("top", (event.y) / 2 + "px")
     }

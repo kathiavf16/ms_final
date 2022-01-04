@@ -65,7 +65,7 @@ li {
 }
 
 .sidenav a:hover {
-  color: #292626;
+  color: #eec146;
 }
 
 .sidenav p,  h3 {
@@ -135,7 +135,10 @@ color: #292626;
 }
  .subtitle{
     font-size: 1em;
-    font-weight: bold;
+    font-weight:lighter;
+    font-style: italic;
+    text-align: center;
+    color: tomato;
  }
 
  .tooltip {

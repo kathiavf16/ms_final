@@ -49,28 +49,26 @@
             current climate change is largely due to human activity, like burning fossil fuels, like natural gas, oil,
             and coal”
         </p>
-        <p>One of the main points I would like to address is the negative impact of climate change on the health of the
-            current and future generations. The World Health Organization (WHO) states, “climate change is impacting
-            human lives and health in a variety of ways."</p>
-        <p>My research focuses specifically on analyzing air pollution indicators. A 99% of the world population is
-            exposed to bad quality air, and most of us are not even aware of how the quality of air is measured. My goal
-            is to explain the basics of the Air Quality Index and its relationship with climate change to educate an
-            audience that might be interested in learning more about this subject.</p>
+        <p>This exploratory data analysis focuses on analyzing air pollution indicators. The World Health Organization
+            (WHO) states a 99% of the world population is exposed to bad quality air, and most of us are not even aware
+            of how the quality of air is measured. My goal is to address the basics concepts of the Air Quality Index
+            and its relationship with climate change to educate an audience that might be interested in learning more
+            about this subject.</p>
     </section> <br><br>
     <section>
         <h3 class="h3-body"><u>About The Data</u></h3> <br>
-        <p>To conduct this exploratory data analysis I used multiple datasets, but the primary was the World Development
-            Indicators dataset from The World Bank Data Catalog. I used this dataset because The World Bank's mission is
-            committed to reducing poverty and rising to the challenges of climate change. Also, to collect this data, The World Bank 
-            works with well recognized international sources, and many important organizations worldwide rely on their
+        <p>To conduct this research I used multiple datasets, but the primary was the World Development Indicators
+            dataset from The World Bank Data Catalog. It is important to note The World Bank's mission is committed to
+            reducing poverty and rising to the challenges of climate change. Also, to collect this data, The World Bank
+            works with well recognized international sources, and important organizations worldwide rely on their
             research and expertise.</p>
         
     </section><br>
     <section>
         <h3 class="h3-body"><u>What is the Air Quality Index (AQI)?</u></h3> <br>
-        <p>Taking into account the focus of this interactive narrative is mostly about the harmful effects of air
-            pollution, it was my goal to only analyze air pollution-related indicators. For this purpose, I used the
-            five major indicators from the Air Quality Index (AQI)</p>
+        <p>Taking into account the focus of this research is mostly about the harmful effects of air pollution, it was
+            my goal to only analyze air pollution-related indicators. For this purpose, I used the five major indicators
+            from the Air Quality Index (AQI)</p>
         <p>The <b>AQI</b> is the index for reporting air quality, and it is composed mostly of the
             following five pollutants:</p>
             <li>Ground-Level Ozone <b>(O3)</b></li>
@@ -85,39 +83,39 @@
     
     </section><br><br><br>
     <section>
-        <h3 class="h3-body"><U>Visualizing The Growth of The Air Pollution Indicators Over Time Data</U></h3> <br>
-        <p>To explain my findings, I think a good start would be by giving a general overview about how the air
-            pollution emissions have been increasing over time. The line chart below shows data from 1960 to 2020. Here
-            we can clearly see that the CO2 emissions are the most abundant among this group, and have been increasing
-            significantly fast over the last twenty year. The other pollutants also have been increasing over time, but
-            not as fast as CO2.</p> <br>
-
+        <h3 class="h3-body"><U>Visualizing The Growth of The Air Pollution Indicators Over Time</U></h3> <br>
+        <p>To explain my findings, I will start with giving a general overview of how air pollution emissions have been
+            increasing over time. The line chart below shows data from 1960 to 2018. Here we can clearly see that the
+            CO2 emissions are the most abundant among this group, and have been increasing significantly over the last
+            twenty years. The other pollutants also have been increasing over time, but not as fast as CO2.
+</p> <br>
+<p class="subtitle">Air Pollution Indicators Overtime - 1960 to 2018</p>
         <div class="svg-container" id="line">
         </div>
-    </section>
+    </section> <br> <br>
     <section>
         <h3 class="h3-body"><u>Greenhouse Gases Distribution By Country</u></h3> <br>
-        <p>To have a better understanding of the distribution, I decided to create a heatmap illustrating the total
-            amount of emissions per country. On the left Y axis are the countries, and on the X axes are the pollutants
-            (CO2, N2O, and, CH4), sorted in descending order starting from the bottom with the highest CO2 emission,
-            which in this case is China followed by the United States, and the India.</p><br>
-            <p class="subtitle">Top 10 countries with the highest tonnes per capita
-                are Qatar, North Korea, and Kuwait</p>
+        <p>To have a better understanding of the distribution of the emissions, I have created a heatmap illustrating
+            the total amount of emissions per country. On the left Y-axis are the countries, and on the X-axes are the
+            pollutants (CO2, N2O, and, CH4), sorted in descending order starting from the bottom with the highest CO2
+            emission, which in this case is China followed by the United States, and India. </p><br>
+            <p class="subtitle">Level of Greenhouse Gases Distubution by Country</p>
 
         <div class="svg-container" id="heatmap"></div>
+        
     </section><br><br><br>
     <section>
         <h3 class="h3-body"><u>Total of Emissions vs Tonnes Per Capita</h3></u><br>
-            <p>The heat map is showing the total amount of emissions per country, but I think this is not a fair way to
-                get to the conclusion of who is responsible for generating the most emissions. I believe calculating
-                emissions per capita would give us a clearer picture because air pollution emissions are mostly
-                generated by human action.</p> <br>
+            <p>The heat map above shows the total amount of emissions per country, but how about calculating the
+                emissions per capita? By calculating the emissions per capita we get an important aspect of the
+                production of emission. As indicated in the climate change definition, most air pollution emissions are
+                generated by human action. Let’s see which countries have been causing the greatest damage per citizen.
+</p> <br>
 
             
-
+<p class="subtitle">Top 10 top countries with the highest total amount of emissions CO2
+    (China, United States, and India). </p>
             <div class="svg-container-w" id="">
-                <p class="subtitle">Top 10 top countries with the highest total amount of emissions CO2
-                    are China, the United States, and India. </p>
                 <iframe title="" aria-label="Bar Chart" id="datawrapper-chart-cOqkx"
                     src="https://datawrapper.dwcdn.net/cOqkx/1/" scrolling="no" frameborder="0"
                     style="width: 0; min-width: 100% !important; border: none;" height="288"></iframe>
@@ -137,10 +135,9 @@
                     }();
                 </script> 
             </div><br> <br> <br>
+             <p class="subtitle">Top 10 countries with the highest tonnes per capita
+                 (Qatar, North Korea, and Kuwait).</p>
             <div class="svg-container-w">
-                <p class="subtitle">Top 10 countries with the highest tonnes per capita
-                    are Qatar, North Korea, and Kuwait</p>
-
                 <iframe title="" aria-label="Range Plot" id="datawrapper-chart-YtoIF"
                     src="https://datawrapper.dwcdn.net/YtoIF/1/" scrolling="no" frameborder="0"
                     style="width: 0; min-width: 100% !important; border: none;" height="250"></iframe>
@@ -178,7 +175,7 @@
             <p>From the top ten countries, Omar had the largest increase from 0.52% in 2017 to 4.96% in 2018. On the
                 other hand, Saudi Arabia had the largest reduction going from -2.88% in 2017 to -4.83% in 2018.</p> <br>
 
-
+<p class="subtitle">Top ten countries tonnes per capita(t) 2017 vs 2018</p>
         <div class="svg-container-w">
 
             <iframe title="" aria-label="Grouped Bars"
@@ -201,6 +198,7 @@
             </script> </div> <br> <br>
             <p>Now, looking at the bottom ten countries, Nigeria had the largest increase from 4.15% in 2017 to 15.72%
                 in 2018, and Brazil had the highest decrease going from 1.79% in 2017 to -4.92% in 2018.</p> <br> <br>
+                <p class="subtitle">Bottom 10 countries tonnes per capita(t) 2017 vs 2018</p>
         <div class="svg-container-w">
                 <iframe title="" aria-label="Grouped Bars" id="datawrapper-chart-WBxMc"
                     src="https://datawrapper.dwcdn.net/WBxMc/1/" scrolling="no" frameborder="0"
