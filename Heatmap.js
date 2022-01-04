@@ -8,16 +8,16 @@ const margin = {
         top: 150,
         right: 25,
         bottom: 80,
-        left: 1000
+        left: 1300
     },
     width = 4550 - margin.left - margin.right,
-    height = 5000 - margin.top - margin.bottom;
+    height = 5500 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
 const svg = d3.select("#heatmap")
     .append("svg")
     .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "0 0 4550 5000")
+        .attr("viewBox", "0 0 4550 5500")
         .classed("svg-content", true)
     .attr("width", width)
     .attr("height", height)
@@ -37,7 +37,7 @@ d3.csv("data/greenhouse2.csv").then(function (data) {
         .domain(myGroups)
         .padding(0.05);
     svg.append("g")
-        .style("font-size", 70)
+        .style("font-size", 80)
         .style("color", "black")
         .attr("transform", `translate(0, ${height})`)
         .call(d3.axisBottom(x).tickSize(0))
@@ -49,7 +49,7 @@ d3.csv("data/greenhouse2.csv").then(function (data) {
         .domain(myVars)
         .padding(0.40);
     svg.append("g")
-        .style("font-size", 70)
+        .style("font-size", 80)
         .style("color", "black")
         .call(d3.axisLeft(y).tickSize(0))
         .select(".domain").remove()
