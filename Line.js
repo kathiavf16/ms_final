@@ -4,9 +4,9 @@ class Line {
 
         // Code goes here
        const margin = {
-               top: 100,
+               top: 20,
                right: 30,
-               bottom: 30,
+               bottom: 0,
                left: 60
            },
            width = 660 - margin.left - margin.right,
