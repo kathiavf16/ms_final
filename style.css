@@ -154,7 +154,7 @@ color: #292626;
     vertical-align: top;
     overflow: hidden;
     align-content: center;
-    border-style: outset;
+  
     
 }
 .svg-content {
@@ -175,7 +175,7 @@ color: #292626;
     vertical-align: top;
     overflow: hidden;
     align-content: center;
-    border-style: outset;
+    border-style: ridge;
     padding: 3%;
     
 }
