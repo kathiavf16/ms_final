@@ -125,41 +125,27 @@ class Line {
                        (d[1])
                })
 
-                
 
-               // create a tooltip
-               const tooltip = d3.select("#line")
-                   .append("div")
-                   .style("opacity", 0)
-                   .attr("class", "tooltip")
-                   .style("background-color", "white")
-                   .style("border", "solid")
-                   .style("border-width", "2px")
-                   .style("border-radius", "5px")
-                   .style("padding", "5px")
 
-               // Three function that change the tooltip when user hover / move / leave a cell
-               const mouseover = function (event, d) {
-                   tooltip
-                       .style("opacity", 1)
-                   d3.select(this)
-                       .style("stroke", "black")
-                       .style("opacity", 1)
-               }
-               const mousemove = function (event, d) {
-                   tooltip
-                       .html(d.IndicatorValue + "The exact value of<br>this cell is: " + d.IndicatorValue)
-                       .style("left", (event.x) / 2 + "px")
-                       .style("top", (event.y) / 2 + "px")
-               }
-               const mouseleave = function (event, d) {
-                   tooltip
-                       .style("opacity", 0)
-                   d3.select(this)
-                       .style("stroke", "solid")
-                       .style("opacity", 0.8)
-               }
+                // add a path element using the line function
+                let pathD = path
+                    .append('path')
+                    .attr('d', line(data))
+                    .attr('fill', 'none')
+                    .attr('stroke', '#f5842e')
+                    .attr('stroke-width', '3');
 
+                // add a animation.
+                const pathNode = pathD.node();
+                const pathLength = pathNode.getTotalLength();
+                const transitionPath = d3
+                    .transition()
+                    .duration(2500);
+                pathD
+                    .attr("stroke-dashoffset", pathLength)
+                    .attr("stroke-dasharray", pathLength)
+                    .transition(transitionPath)
+                    .attr("stroke-dashoffset", 0);
                
 
        })
