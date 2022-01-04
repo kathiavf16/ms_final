@@ -5,19 +5,19 @@ class Heatmap {
         // Code goes here
 // set the dimensions and margins of the graph
 const margin = {
-        top: 40,
+        top: 150,
         right: 25,
-        bottom: 30,
-        left: 400
+        bottom: 80,
+        left: 1000
     },
-    width = 3550 - margin.left - margin.right,
-    height = 4500 - margin.top - margin.bottom;
+    width = 4550 - margin.left - margin.right,
+    height = 5000 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
 const svg = d3.select("#heatmap")
     .append("svg")
     .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "0 0 3550 4500")
+        .attr("viewBox", "0 0 4550 5000")
         .classed("svg-content", true)
     .attr("width", width)
     .attr("height", height)
@@ -122,7 +122,7 @@ d3.csv("data/greenhouse2.csv").then(function (data) {
 // Add title to graph
 svg.append("text")
     .attr("x", 0)
-    .attr("y", -50)
+    .attr("y", -70)
     .attr("text-anchor", "left")
     .style("font-size", "50px")
     .text("Greenhouse Gas Emissions (CO2, N2O, & CH4)");
@@ -130,7 +130,7 @@ svg.append("text")
 // Add subtitle to graph
 svg.append("text")
     .attr("x", 0)
-    .attr("y", -20)
+    .attr("y", 20)
     .attr("text-anchor", "left")
     .style("font-size", "50px")
     .style("fill", "grey")

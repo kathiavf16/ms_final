@@ -4,19 +4,19 @@ class Line {
 
         // Code goes here
        const margin = {
-               top: 10,
+               top: 100,
                right: 30,
                bottom: 30,
                left: 60
            },
            width = 660 - margin.left - margin.right,
-           height = 400 - margin.top - margin.bottom;
+           height = 500 - margin.top - margin.bottom;
 
        // append the svg object to the body of the page
        const svg = d3.select("#line")
            .append("svg")
            .attr("preserveAspectRatio", "xMinYMin meet")
-               .attr("viewBox", "0 0 660 400")
+               .attr("viewBox", "0 0 660 500")
                .classed("svg-content", true)
            .attr("width", width + margin.left + margin.right)
            .attr("height", height + margin.top + margin.bottom)
