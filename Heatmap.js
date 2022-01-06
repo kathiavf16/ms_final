@@ -7,18 +7,18 @@ class Heatmap {
 const margin = {
         top: 100,
         right: 25,
-        bottom: 120,
+        bottom: 150,
         left: 1600
     },
-    width = 4550 - margin.left - margin.right,
-    height = 8500 - margin.top - margin.bottom;
+    width = 6550 - margin.left - margin.right,
+    height = 7500 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
 
 const svg = d3.select("#heatmap")
     .append("svg")
     .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "0 0 5550 8500")
+        .attr("viewBox", "0 0 6550 7500")
         .classed("svg-content", true)
     .attr("width", width)
     .attr("height", height)
@@ -48,7 +48,7 @@ d3.csv("data/greenhouse_gases1.csv").then(function (data) {
     const y = d3.scaleBand()
         .range([height, 0])
         .domain(myVars)
-        .padding(0.30);
+        .padding(0.10);
     svg.append("g")
         .style("font-size", 140)
         .style("color", "black")
