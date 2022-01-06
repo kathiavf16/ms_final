@@ -5,19 +5,20 @@ class Heatmap {
         // Code goes here
 // set the dimensions and margins of the graph
 const margin = {
-        top: 150,
+        top: 100,
         right: 25,
-        bottom: 80,
-        left: 1300
+        bottom: 120,
+        left: 1600
     },
     width = 4550 - margin.left - margin.right,
-    height = 5500 - margin.top - margin.bottom;
+    height = 8500 - margin.top - margin.bottom;
 
 // append the svg object to the body of the page
+
 const svg = d3.select("#heatmap")
     .append("svg")
     .attr("preserveAspectRatio", "xMinYMin meet")
-        .attr("viewBox", "0 0 4550 5500")
+        .attr("viewBox", "0 0 5550 8500")
         .classed("svg-content", true)
     .attr("width", width)
     .attr("height", height)
@@ -25,7 +26,7 @@ const svg = d3.select("#heatmap")
     .attr("transform", `translate(${margin.left}, ${margin.top})`);
 
 //Read the data
-d3.csv("data/greenhouse2.csv").then(function (data) {
+d3.csv("data/greenhouse_gases1.csv").then(function (data) {
 
     // Labels of row and columns -> unique identifier of the column called 'group' and 'variable'
     const myGroups = Array.from(new Set(data.map(d => d.IndicatorName)))
@@ -37,7 +38,7 @@ d3.csv("data/greenhouse2.csv").then(function (data) {
         .domain(myGroups)
         .padding(0.05);
     svg.append("g")
-        .style("font-size", 80)
+        .style("font-size", 150)
         .style("color", "black")
         .attr("transform", `translate(0, ${height})`)
         .call(d3.axisBottom(x).tickSize(0))
@@ -47,9 +48,9 @@ d3.csv("data/greenhouse2.csv").then(function (data) {
     const y = d3.scaleBand()
         .range([height, 0])
         .domain(myVars)
-        .padding(0.40);
+        .padding(0.30);
     svg.append("g")
-        .style("font-size", 80)
+        .style("font-size", 140)
         .style("color", "black")
         .call(d3.axisLeft(y).tickSize(0))
         .select(".domain").remove()
@@ -57,15 +58,15 @@ d3.csv("data/greenhouse2.csv").then(function (data) {
     // Build color scale
     const myColor = d3.scaleSequential()
         .interpolator(d3.interpolatePuBuGn)
-        .domain([50000,100000,200000, 500000, 900000,1000000, 2000000,3000000,4000000, 5000000,120000000])
+        .domain([12000, 500000, 900000,1000000, 2000000,3000000,4000000, 5000000,10000000])
 
     // create a tooltip
     const tooltip = d3.select("#heatmap")
         .append("div")
         .style("opacity", 0)
         .attr("class", "tooltip")
-        .style("background-color", "black")
-        .style("color", "orange")
+        .style("background-color", "white")
+        .style("color", "tomato")
         .style("border", "solid")
         .style("border-width", "2px")
         .style("border-radius", "5px")
@@ -120,6 +121,9 @@ d3.csv("data/greenhouse2.csv").then(function (data) {
         .on("mousemove", mousemove)
         .on("mouseleave", mouseleave)
 })
+
+
+
 
 /* // Add title to graph
 svg.append("text")
