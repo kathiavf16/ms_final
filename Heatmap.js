@@ -15,6 +15,8 @@ const margin = {
 
 // append the svg object to the body of the page
 
+
+
 const svg = d3.select("#heatmap")
     .append("svg")
     .attr("preserveAspectRatio", "xMinYMin meet")
@@ -120,8 +122,11 @@ d3.csv("data/greenhouse_gases1.csv").then(function (data) {
         .on("mouseover", mouseover)
         .on("mousemove", mousemove)
         .on("mouseleave", mouseleave)
+        
+       
 })
 
+ 
 
 
 
