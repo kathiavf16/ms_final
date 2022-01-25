@@ -1,15 +1,15 @@
 // Narrative Project - Author: Kathia Vargas Feliz
 // Exploring Climate Change Data
 
-import {Line} from "./Line.js";
+//import {Line} from "./Line.js";
 import {Heatmap} from "./Heatmap.js";
 
-let line;
+//let line;
 let heatmap;
 
 let state = {
 
-  line: null,
+  //line: null,
   heatmap: null,
   
 };
@@ -28,7 +28,7 @@ Promise.all([
   
 function init(){
   heatmap = new Heatmap(state, setGlobalState);
-  line = new Line(state, setGlobalState);
+  //line = new Line(state, setGlobalState);
   
   console.log("table", line)
   draw();
@@ -37,7 +37,7 @@ function init(){
 function draw() {
   console.log("test",line, heatmap);
   heatmap.draw(state, setGlobalState);
-  line.draw(state, setGlobalState);
+  //line.draw(state, setGlobalState);
     
 }
 
